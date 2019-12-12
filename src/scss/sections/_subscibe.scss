@@ -1,0 +1,52 @@
+.subscribe{
+  position: relative;
+  background: $blogBg;
+  padding-top: 199px;
+  padding-left: 292px;
+  z-index: 1;
+  .subscribe-content{
+    background: $subscibeBg;
+    display: flex;
+    padding-right: 112px;
+    &::before{
+      position: absolute;
+      content: 'SUBSCRIBE';
+      top:121px;
+      left:90px;
+      color: rgba(95,95,95,0.53);
+      font-size: 225px;
+      line-height: 125px;
+      z-index: -1;
+      width: 1094px;
+    }
+    .left-part{
+      padding-top: 109px;
+      padding-left: 112px;
+
+      h4{
+        text-align: left;
+        color: $subscibeHeading;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 24px;
+      }
+
+      p{
+        width: 455px;
+        font-size: 18px;
+        line-height: 26px;
+        color: $subscibeParagraf;
+      }
+    }
+    .right-part{
+      padding: 199px 112px 0 124px;
+      margin-right: 112px;
+      input{
+        display: block;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid grey;
+      }
+    }
+  }
+}

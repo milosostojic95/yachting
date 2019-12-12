@@ -1,0 +1,42 @@
+.blog{
+  background: $blogBg;
+  padding: 0;
+
+  .blog-content{
+    display: flex;
+    padding-top: 164px;
+
+    .left-part{
+      width: 683px;
+      height: 1024;
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .right-part{
+      margin-top: 123px;
+      margin-left: 124px;
+      height: 100%;
+
+      h2{
+        font-size: 60px;
+        line-height: 63px;
+        color: $blogHeading;
+      }
+      h5{
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 22px;
+        color:$blogSmallHeading
+      }
+      p{
+        margin-top: 70px;
+        font-size: 18px;
+        line-height: 22px;
+        color:$blogParagraf;
+        width: 435px;
+      }
+    }
+  }
+}
