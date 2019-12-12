@@ -1,11 +1,15 @@
 nav{
   height: 124px;
+
   .navbar{
     display: flex;
     height: 100%;
+
     .navbar-logo{
+
       a{
         display: block;
+
         h1{
           font-size: 48px;
           margin-top: 66px;
@@ -15,20 +19,24 @@ nav{
         }
       }
     }
+
     .navbar-nav{
       display: flex;
       justify-content: flex-end;
       margin-top: 88px;
       margin-right: 87px;
       width: 100%;
+
       li{
         display: inline;
+
         a{
           font-size: 18px;
           margin-right: 37.67px;
           line-height: 22px;
           color:$navLink;
           display: block;
+
           &:nth-child(4){
             margin-right: 0;
           }

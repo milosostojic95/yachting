@@ -1,0 +1,46 @@
+.service{
+  .service-intro{
+
+    h1{
+      font-size: 232px;
+      line-height: 125px;
+      margin-left: 100px;
+      margin-top: 135px;
+      color:$serviceIntro;
+    }
+  }
+
+  .service-content{
+    margin-top: 277px;
+    margin-left: 198px;
+    display: flex;
+    margin-bottom: 1189px;
+
+    .left-part{
+      margin-top: 6px;
+      height: 263px;
+      width: 437px;
+
+      p{
+        margin: 0;
+        color:$serviceLink;
+        font-size: 18px;
+        line-height: 26px;
+      }
+    }
+    .right-part{
+      margin-left: 100px;
+
+      p{
+        margin: 0;
+        color: $serviceParagraf;
+        font-size: 18px;
+        line-height: 26px;
+        width: 400px;
+        height: 182px;
+        height: 26px;
+
+      }
+    }
+  }
+}
