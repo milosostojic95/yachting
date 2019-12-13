@@ -42,30 +42,16 @@
         input{
           background: transparent;
           border: none;
-          border-bottom: 1px solid $subscibeBorder;
           width: 100%;
+
           &[type="text"]{
             font-size: 18px;
             line-height: 26px;
             color:$subscibeFormtext;
+            border-bottom: 1px solid $subscibeBorder;
           }
           &:nth-child(2){
             margin-top: 22px;
-          }
-
-        }
-        .form-button{
-          display: flex;
-          margin-top: 41px;
-          background: transparent;
-
-          input{
-            border: none;
-            font-size: 18px;
-            line-height: 26px;
-            color: $subscibeBtn;
-            text-align: right;
-            cursor: pointer;
           }
         }
       }

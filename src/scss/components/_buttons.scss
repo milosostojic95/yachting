@@ -1,0 +1,29 @@
+.service-btn{
+  position: absolute;
+  right: 13px;
+  top:200px;
+
+  a{
+    font-size: 24px;
+    line-height: 34px;
+    padding-right: 13px;
+    color: $serviceBtn;
+  }
+}
+.form-button{
+  display: flex;
+  margin-top: 41px;
+  background: transparent;
+  .form-btn{
+    border: none;
+  }
+
+  input{
+    border: none;
+    font-size: 18px;
+    line-height: 26px;
+    color: $subscibeBtn;
+    text-align: right;
+    cursor: pointer;
+  }
+}
