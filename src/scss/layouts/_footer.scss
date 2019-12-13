@@ -1,10 +1,27 @@
 .footer{
   display: flex;
   background: $blogBg;
+  height: 532px;
+
   .footer-content{
     width: 25%;
-    padding: 153px 65px 143px 100px;
-    position: relative;
+    padding: 153px 50px 0 100px;
+    .privacy{
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 200px;
+      p{
+        font-size: 12px;
+        line-height: 18px;
+        padding-right: 10px;
+        color:$subscibeBtn;
+        span{
+          font-size: 12px;
+          line-height: 18px;
+          color:$subscibeBtn;
+        }
+      }
+    }
 
     h5{
       color: $footerHeading;
