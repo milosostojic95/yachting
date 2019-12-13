@@ -1,9 +1,7 @@
 nav{
-  height: 124px;
-
+  padding:66px 98px 0 97px;
   .navbar{
     display: flex;
-    height: 100%;
 
     .navbar-logo{
 
@@ -12,8 +10,6 @@ nav{
 
         h1{
           font-size: 48px;
-          margin-top: 66px;
-          margin-left: 97px;
           color: $navLogo;
           line-height: 58px;
         }
@@ -23,23 +19,19 @@ nav{
     .navbar-nav{
       display: flex;
       justify-content: flex-end;
-      margin-top: 88px;
-      margin-right: 87px;
+      margin-top:22px;
       width: 100%;
 
       li{
-        display: inline;
-
+        padding-right: 37.67px;
+        &:nth-child(4){
+          padding-right: 0;
+        }
         a{
           font-size: 18px;
-          margin-right: 37.67px;
           line-height: 22px;
           color:$navLink;
           display: block;
-
-          &:nth-child(4){
-            margin-right: 0;
-          }
         }
       }
     }

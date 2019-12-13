@@ -1,22 +1,33 @@
 .blog{
   background: $blogBg;
-  padding: 0;
+  padding: 164px 199px 0 0;
+  position: relative;
+  z-index: 1;
 
   .blog-content{
     display: flex;
-    padding-top: 164px;
+    &::before{
+      content: 'Studio';
+      position: absolute;
+      left: 97px;
+      top: 60px;
+      font-size: 225px;
+      line-height: 125px;
+      z-index: -1;
+      color: rgba(95,95,95,0.53);
+    }
 
     .left-part{
       width: 683px;
-      height: 1024;
+      height: 1024px;
+      margin-left: -1px;
       img{
+        width:100%;
         height: 100%;
-        width: 100%;
       }
     }
     .right-part{
-      margin-top: 123px;
-      margin-left: 124px;
+      padding: 123px 0 0 124px;
       height: 100%;
 
       h2{
@@ -28,10 +39,10 @@
         margin-top: 20px;
         font-size: 18px;
         line-height: 22px;
-        color:$blogSmallHeading
+        color:$blogSmallHeading;
+        margin-bottom: 70px;
       }
       p{
-        margin-top: 70px;
         font-size: 18px;
         line-height: 22px;
         color:$blogParagraf;
