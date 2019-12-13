@@ -54,15 +54,19 @@
           }
 
         }
-        .form-btn{
-          display: inline-block;
-
+        .form-button{
+          display: flex;
           margin-top: 41px;
-          border: none;
           background: transparent;
-          font-size: 18px;
-          line-height: 26px;
-          color: $subscibeBtn;
+
+          input{
+            border: none;
+            font-size: 18px;
+            line-height: 26px;
+            color: $subscibeBtn;
+            text-align: right;
+            cursor: pointer;
+          }
         }
       }
     }
