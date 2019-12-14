@@ -17,7 +17,6 @@
       font-size: 225px;
       line-height: 125px;
       z-index: -1;
-      width: 1094px;
     }
     .left-part{
       h4{
@@ -54,6 +53,18 @@
             margin-top: 22px;
           }
         }
+      }
+    }
+  }
+}
+@media(max-width:1200px){
+  .subscribe{
+    padding:199px 0 0 230px;
+    .subscribe-content{
+      padding:109px 100px 115px 100px;
+
+      &::before{
+        font-size: 180px;
       }
     }
   }

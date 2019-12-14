@@ -6,10 +6,14 @@
   .footer-content{
     width: 25%;
     padding: 153px 50px 0 100px;
+    position: relative;
+
     .privacy{
       display: flex;
-      justify-content: flex-end;
-      padding-top: 200px;
+      position: absolute;
+      bottom: 36px;
+      right: 50px;
+
       p{
         font-size: 12px;
         line-height: 18px;
@@ -56,5 +60,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+@media(max-width:1200px){
+  .footer{
+    .footer-content{
+      padding: 153px 40px 0 70px;
+
+      h4{
+        font-size: 20px;
+      }
+    }
   }
 }
