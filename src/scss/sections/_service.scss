@@ -1,46 +1,33 @@
 .service {
-
-  .service-intro {
-
-    h1 {
-      font-size: 232px;
-      line-height: 125px;
-      margin-left: 100px;
-      margin-top: 135px;
-      color: $serviceIntro;
-    }
-  }
+  padding: 287px 0 0 0;
+  position: relative;
+  z-index: 1;
 
   .service-content {
-    display: flex;
-    flex-direction: row;
-    padding: 277px 305px 200px 198px;
 
-    .left-part {
-      margin-top: 6px;
-      height: 263px;
-      width: 437px;
-
-      p{
-        margin: 0;
-        color: $serviceLink;
-        font-size: 18px;
-        line-height: 26px;
-      }
+    &::before {
+      content: 'Service';
+      position: absolute;
+      font-size: 232px;
+      line-height: 125px;
+      color: $serviceIntro;
+      top: 175px;
+      left: 584px;
+      z-index: -1;
     }
+    h2 {
+      text-align: center;
+      font-size: 52px;
+      line-height: 93px;
+      color: $serviceHeading;
 
-    .right-part {
-      position: relative;
-      margin-left: 100px;
-      display: block;
+      span {
+        font-size: 86px;
+        color: $serviceSpan;
 
-      p{
-        margin: 0;
-        color: $serviceParagraf;
-        font-size: 18px;
-        line-height: 26px;
-        width: 400px;
-        height: 182px;
+        &:last-of-type {
+          font-size: 120px;
+        }
       }
     }
   }

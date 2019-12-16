@@ -8,7 +8,7 @@
   <script src="./dist/main.js"></script>
 </head>
 <body>
-  <nav>
+  <nav id="home">
     <div class="navbar">
       <div class="navbar-logo">
         <a href="">
@@ -25,7 +25,7 @@
   </nav>
   <!-- =========================================================Home===============================================
   =================================================================================================================-->
-  <section id="home" class="home">
+  <section class="home">
     <div class="home-into">
       <h1>Get Yachting <br>
         Media Coverage
@@ -41,37 +41,18 @@
    <!-- =========================================================service===============================================
   =================================================================================================================-->
   <section class="service">
-    <div class="service-intro">
-      <h1>Service</h1>
-    </div>
     <div class="service-content">
-      <div class="left-part">
-        <p>
-          Press Release Creation & Distribution
-        </p><br>
-        <p>
-          Social Media Management
-        </p> <br>
-        <p>
-          Marketing & Branding Consulting
-        </p><br>
-        <p>
-          Paid Ads & Data Analysis
-        </p>
-      </div>
-      <div class="right-part">
-        <p>Are you going to release a new yacht or a new concept? Make sure your project is noticed by the yachting industry!
-           We work with boat builders and yacht designers in order to promote their creation.
-          We connect you with yachting magazines, influencers and blogs. Get noticed by the relevant people.
-        </p>
-        <div class="service-btn">
-          <a href="">Descover How <?xml version="1.0" encoding="utf-8"?>
-            <svg width="15px" height="13px" viewBox="0 0 15 13" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
-              <desc>Created with Lunacy</desc>
-              <path d="M8.39437 13C8.61456 13 8.80884 12.9207 8.97722 12.7622L8.97722 12.7622L14.728 7.11433C14.9093 6.94258 15 6.7345 15 6.49009C15 6.24568 14.9093 6.0376 14.728 5.86585L14.728 5.86585L9.01608 0.237805C8.83475 0.0792683 8.62751 0 8.39437 0C8.16123 0 7.96371 0.0891768 7.80181 0.267531C7.63991 0.445884 7.55896 0.653963 7.55896 0.891768C7.55896 1.12957 7.64962 1.33435 7.83095 1.5061L7.83095 1.5061L12.0275 5.62805L0.875614 5.62805C0.629522 5.62805 0.419049 5.72053 0.244194 5.90549C0.069339 6.09045 -0.0116123 6.30843 0.00133988 6.55945C0.0142921 6.78404 0.104958 6.97561 0.273336 7.13415C0.441715 7.29268 0.635998 7.37195 0.856186 7.37195L0.856186 7.37195L11.9886 7.37195L7.79209 11.4939C7.62372 11.6657 7.53629 11.8704 7.52981 12.1082C7.52334 12.346 7.60429 12.5508 7.77267 12.7226C7.94105 12.9075 8.14828 13 8.39437 13Z" id="" fill="#5F5F5F" stroke="none" />
-            </svg></a>
-        </div>
-      </div>
+      <h2>
+        Hold your <span>business</span> in your hands <br>
+        with our <span>services</span>.
+      </h2>
+      <button class="service-btn">Discover How <?xml version="1.0" encoding="utf-8"?>
+        <svg width="15px" height="13px" viewBox="0 0 15 13" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+          <desc>Created with Lunacy</desc>
+          <path d="M8.39437 13C8.61456 13 8.80884 12.9207 8.97722 12.7622L8.97722 12.7622L14.728 7.11433C14.9093 6.94258 15 6.7345 15 6.49009C15 6.24568 14.9093 6.0376 14.728 5.86585L14.728 5.86585L9.01608 0.237805C8.83475 0.0792683 8.62751 0 8.39437 0C8.16123 0 7.96371 0.0891768 7.80181 0.267531C7.63991 0.445884 7.55896 0.653963 7.55896 0.891768C7.55896 1.12957 7.64962 1.33435 7.83095 1.5061L7.83095 1.5061L12.0275 5.62805L0.875614 5.62805C0.629522 5.62805 0.419049 5.72053 0.244194 5.90549C0.069339 6.09045 -0.0116123 6.30843 0.00133988 6.55945C0.0142921 6.78404 0.104958 6.97561 0.273336 7.13415C0.441715 7.29268 0.635998 7.37195 0.856186 7.37195L0.856186 7.37195L11.9886 7.37195L7.79209 11.4939C7.62372 11.6657 7.53629 11.8704 7.52981 12.1082C7.52334 12.346 7.60429 12.5508 7.77267 12.7226C7.94105 12.9075 8.14828 13 8.39437 13Z" id="" fill="#5F5F5F" stroke="none" />
+        </svg>
+      </button clas>
+
     </div>
 
   </section>
@@ -117,14 +98,12 @@
         <form  id="subscribe-form" action="">
           <input type="text" name="name" placeholder="Name">
           <input type="text" name="email" placeholder="E-mail">
-          <div class="form-button">
-            <input type="submit" value="Subscribe " class="form-btn">
-            <?xml version="1.0" encoding="utf-8"?>
-            <svg width="16px" height="26px" viewBox="0 0 16 13" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+          <button class="form-btn">Subscribe<?xml version="1.0" encoding="utf-8"?>
+            <svg width="16px" height="13px" viewBox="0 0 16 13" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
               <desc>Created with Lunacy</desc>
               <path d="M8.43884 12.8125C8.6602 12.8125 8.85551 12.7344 9.02478 12.5781L9.02478 12.5781L14.806 7.01172C14.9883 6.84245 15.0795 6.63737 15.0795 6.39648C15.0795 6.1556 14.9883 5.95052 14.806 5.78125L14.806 5.78125L9.06384 0.234375C8.88155 0.078125 8.67322 0 8.43884 0C8.20447 0 8.0059 0.0878906 7.84314 0.263672C7.68038 0.439453 7.599 0.644531 7.599 0.878906C7.599 1.11328 7.69015 1.3151 7.87244 1.48438L7.87244 1.48438L12.0912 5.54688L0.880253 5.54688C0.632857 5.54688 0.421269 5.63802 0.245488 5.82031C0.0697063 6.0026 -0.0116738 6.21745 0.00134698 6.46484C0.0143678 6.6862 0.105514 6.875 0.274784 7.03125C0.444055 7.1875 0.639368 7.26563 0.860722 7.26563L0.860722 7.26563L12.0521 7.26563L7.83338 11.3281C7.66411 11.4974 7.57621 11.6992 7.5697 11.9336C7.56319 12.168 7.64457 12.3698 7.81384 12.5391C7.98312 12.7214 8.19145 12.8125 8.43884 12.8125Z" id="" fill="#5F5F5F" stroke="none" />
               </svg>
-          </div>
+            </button>
         </form>
       </div>
     </div>
