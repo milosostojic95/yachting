@@ -1,7 +1,7 @@
-.service-btn{
+.service-btn {
   position: absolute;
   right: 13px;
-  top:200px;
+  top: 200px;
 
   a{
     font-size: 24px;
@@ -10,10 +10,12 @@
     color: $serviceBtn;
   }
 }
-.form-button{
+
+.form-button {
   display: flex;
   margin-top: 41px;
   background: transparent;
+
   .form-btn{
     border: none;
   }
@@ -26,4 +28,11 @@
     text-align: right;
     cursor: pointer;
   }
+}
+.top-button {
+  width: 25%;
+  background: $topBtnBg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

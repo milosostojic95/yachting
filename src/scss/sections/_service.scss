@@ -1,37 +1,39 @@
-.service{
+.service {
 
-  .service-intro{
+  .service-intro {
 
-    h1{
+    h1 {
       font-size: 232px;
       line-height: 125px;
       margin-left: 100px;
       margin-top: 135px;
-      color:$serviceIntro;
+      color: $serviceIntro;
     }
   }
 
-  .service-content{
+  .service-content {
     display: flex;
     flex-direction: row;
     padding: 277px 305px 200px 198px;
 
-    .left-part{
+    .left-part {
       margin-top: 6px;
       height: 263px;
       width: 437px;
 
       p{
         margin: 0;
-        color:$serviceLink;
+        color: $serviceLink;
         font-size: 18px;
         line-height: 26px;
       }
     }
-    .right-part{
+
+    .right-part {
       position: relative;
       margin-left: 100px;
       display: block;
+
       p{
         margin: 0;
         color: $serviceParagraf;

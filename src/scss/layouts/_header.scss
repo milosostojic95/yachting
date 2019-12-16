@@ -1,14 +1,15 @@
-nav{
-  padding:66px 98px 0 97px;
-  .navbar{
+nav {
+  padding: 66px 98px 0 97px;
+
+  .navbar {
     display: flex;
 
-    .navbar-logo{
+    .navbar-logo {
 
-      a{
+      a {
         display: block;
 
-        h1{
+        h1 {
           font-size: 48px;
           color: $navLogo;
           line-height: 58px;
@@ -16,28 +17,28 @@ nav{
       }
     }
 
-    .navbar-nav{
+    .navbar-nav {
       display: flex;
       justify-content: flex-end;
-      margin-top:22px;
+      margin-top: 22px;
       width: 100%;
 
-      li{
+      li {
         padding-right: 37.67px;
-        &:nth-child(4){
+
+        &:nth-child(4) {
           padding-right: 0;
         }
-        a{
+
+        a {
           font-size: 18px;
           line-height: 22px;
-          color:$navLink;
+          color: $navLink;
           display: block;
         }
       }
     }
   }
 }
-@media (min-width: 992px) and (max-width: 1199.98px)
-{
 
-}
+

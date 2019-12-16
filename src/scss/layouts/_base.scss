@@ -1,26 +1,27 @@
 *,
 *::after,
-*::before{
+*::before {
   box-sizing: border-box;
 }
 
-html,body{
+html,body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-img{
+img {
   width: 100%;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-li{
+li {
   list-style: none;
 }
-h1,h2,h3,h4,h5,h6,p{
+h1,h2,h3,h4,h5,h6,p {
   margin: 0;
 }
