@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Orkney";
-  src: url('../assets/fonts/orkney-bold.woff') format("woff"),
-       url('../assets/fonts/orkney-bold.otf') format("opentype");
+  src: url('./orkney-bold.woff') format("woff");
+
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: 'Orkney';
-  src: url('../assets/fonts/orkney-regular.woff') format('woff'),
-       url('../assets/fonts/orkney-regular.otf') format('opentype');
+  src: url('./orkney-regular.woff') format('woff');
+
   font-weight: 400;
   font-style: normal;
 }

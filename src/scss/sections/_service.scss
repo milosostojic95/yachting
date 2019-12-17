@@ -6,13 +6,13 @@
   .service-content {
 
     &::before {
-      content: 'Service';
+      content: 'Services';
       position: absolute;
       font-size: 232px;
       line-height: 125px;
       color: $serviceIntro;
       top: 175px;
-      left: 584px;
+      left: 500px;
       z-index: -1;
     }
     h2 {
@@ -28,6 +28,22 @@
         &:last-of-type {
           font-size: 120px;
         }
+      }
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .service {
+
+    .service-content {
+
+      &::before {
+        font-size: 180px;
+        left: 340px;
+      }
+
+      h2{
+        font-size: 40px;
       }
     }
   }

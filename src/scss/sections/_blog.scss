@@ -58,7 +58,31 @@
 }
 @media (max-width: 1200px) {
 
-  .blog{
-    padding: 164px 110px 0 0;
+  .blog {
+    padding: 140px 70px 0 0;
+
+    .blog-content {
+
+      &::before {
+        top: 100px;
+        left: 70px;
+        font-size: 210px;
+      }
+
+      .right-part {
+
+        h2{
+          font-size: 55px;
+        }
+
+        h5{
+          font-size: 18px;
+        }
+
+        p{
+          font-size: 18px;
+        }
+      }
+    }
   }
 }

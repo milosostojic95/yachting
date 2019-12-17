@@ -11,8 +11,8 @@
 
     &::before {
       position: absolute;
-      content: 'SUBSCRIBE';
-      top: 121px;
+      content: 'Subscribe';
+      top: 101px;
       left: 90px;
       color: rgba(95,95,95,0.53);
       font-size: 225px;
@@ -67,11 +67,22 @@
   .subscribe {
     padding: 199px 0 0 230px;
 
-    .subscribe-conten {
-      padding: 109px 100px 115px 100px;
+    .subscribe-content {
+      padding: 90px 80px 115px 80px;
 
       &::before {
-        font-size: 180px;
+        font-size: 160px;
+      }
+
+      .left-part {
+
+        p {
+          width: 380px;
+        }
+      }
+
+      .right-part {
+        padding: 80px 0 0 70px;
       }
     }
   }
