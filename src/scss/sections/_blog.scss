@@ -64,7 +64,7 @@
     .blog-content {
 
       &::before {
-        top: 100px;
+        top: 80px;
         left: 70px;
         font-size: 210px;
       }
@@ -81,6 +81,38 @@
 
         p{
           font-size: 18px;
+          width: 370px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+
+  .blog {
+    padding: 140px 40px 0 0;
+
+    .blog-content {
+
+      &::before {
+        top: 60px;
+        left: 40px;
+        font-size: 170px;
+      }
+
+      .right-part {
+        padding: 123px 0 0 40px;
+
+        h2{
+          font-size: 50px;
+        }
+
+        h5{
+          font-size: 16px;
+        }
+
+        p{
+          font-size: 16px;
         }
       }
     }

@@ -61,22 +61,15 @@
 
     .home-into {
       padding: 107px 0 140px 70px;
-      position: relative;
 
       h1 {
-        font-size: 110px;
+        font-size: 105px;
 
       }
 
       a {
-        position: absolute;
-        right: 34px;
-        bottom: 29px;
-        transform: rotate(90deg);
-        text-transform: uppercase;
         font-size: 12px;
-        line-height: 17px;
-        color: $introLinks;
+        right: 34px;
       }
     }
 
@@ -84,6 +77,32 @@
 
       a{
         right: 26px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .home {
+
+    .home-into {
+      padding: 97px 0 120px 40px;
+
+      h1 {
+        font-size: 85px;
+
+      }
+
+      a {
+        right: 14px;
+        font-size: 12px;
+      }
+    }
+
+    .home-img {
+
+      a{
+        right: 6px;
         font-size: 12px;
       }
     }
