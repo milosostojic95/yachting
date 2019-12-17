@@ -9,6 +9,7 @@ html,body {
   padding: 0;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: $bodyFontFamily;
 }
 
 img {
@@ -24,4 +25,5 @@ li {
 }
 h1,h2,h3,h4,h5,h6,p {
   margin: 0;
+
 }

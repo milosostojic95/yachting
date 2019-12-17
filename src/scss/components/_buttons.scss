@@ -6,6 +6,7 @@
   border: none;
   display: block;
   margin: 44px auto 317px auto;
+  cursor: pointer;
 
   svg{
     margin-left: 13px;
@@ -33,4 +34,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+
+  a {
+    display: block;
+  }
 }
