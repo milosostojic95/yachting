@@ -1,6 +1,6 @@
 .blog {
   background: $blogBg;
-  padding: 264px 189px 0 0;
+  padding: 264px 130px 0 0;
   position: relative;
   z-index: 1;
 
@@ -20,18 +20,17 @@
 
     .left-part {
       width: 683px;
-      height: 1024px;
       margin-left: -1px;
 
       img {
-        width: 100%;
-        height: 100%;
+        max-width: 100%;
+        height: auto;
       }
     }
 
     .right-part {
       padding: 123px 0 0 124px;
-      height: 100%;
+      width: 500px;
 
       h2 {
         font-size: 60px;
@@ -51,7 +50,7 @@
         font-size: 18px;
         line-height: 22px;
         color: $blogParagraf;
-        width: 435px;
+
       }
     }
   }
@@ -82,7 +81,6 @@
 
         p{
           font-size: 18px;
-          width: 370px;
         }
       }
     }
@@ -102,18 +100,22 @@
       }
 
       .right-part {
-        padding: 123px 0 0 60px;
+        padding: 50px 0 0 60px;
+
 
         h2{
-          font-size: 50px;
+          font-size: 48px;
+          line-height: 51px;
         }
 
         h5{
+          margin-top: 5px;
           font-size: 16px;
+          margin-bottom: 10px;
         }
 
         p{
-          font-size: 16px;
+          font-size: 14px;
         }
       }
     }
