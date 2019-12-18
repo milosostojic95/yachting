@@ -1,6 +1,6 @@
 .blog {
   background: $blogBg;
-  padding: 264px 199px 0 0;
+  padding: 264px 189px 0 0;
   position: relative;
   z-index: 1;
 
@@ -59,7 +59,7 @@
 @media (max-width: 1200px) {
 
   .blog {
-    padding: 140px 70px 0 0;
+    padding: 190px 70px 0 0;
 
     .blog-content {
 
@@ -70,6 +70,7 @@
       }
 
       .right-part {
+        padding: 123px 0 0 100px;
 
         h2{
           font-size: 55px;
@@ -101,7 +102,7 @@
       }
 
       .right-part {
-        padding: 123px 0 0 40px;
+        padding: 123px 0 0 60px;
 
         h2{
           font-size: 50px;
