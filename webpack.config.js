@@ -1,5 +1,5 @@
 const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+var MiniCssExtractPlugin = require('mini-css-extract-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 
   module.exports = {
@@ -12,14 +12,16 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
   },
   plugins:[
     new HtmlWebpackPlugin({
-      template:"./site/template.html"
+      template: "./site/template.html"
+    }), new MiniCssExtractPlugin({
+      filename:"[name].[contentHash].css"
     })
   ],
   module: {
     rules: [
       {
         test: /\.scss$/,
-        use: ['style-loader','css-loader','sass-loader',]
+        use: [MiniCssExtractPlugin.loader,'css-loader','sass-loader',]
       },
       {
         test: /\.(svg|png|jpg|gif)$/,
@@ -46,7 +48,7 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
             loader:"file-loader",
             options: {
               name:"[name].[hash].[ext]",
-              outputPath: "fonts",
+              outputPath: "fonts/",
               esModule: false,
             }
           }
