@@ -1,45 +1,51 @@
 .subscribe {
   position: relative;
   background: $blogBg;
-  padding: 199px 0 0 292px;
+  padding: 16vw 0 0 20vw;
   z-index: 1;
 
   .subscribe-content {
     background: $subscibeBg;
-
-    padding: 109px 112px 115px 112px;
+    padding: 8vw 7.5vw;
+    display: flex;
 
     &::before {
       position: absolute;
       content: 'Subscribe';
-      top: 101px;
-      left: 90px;
+      top: 5vw;
+      left: 5vw;
       color: rgba(95,95,95,0.53);
-
-      line-height: 125px;
+      font-size: 16vw;
       z-index: -1;
+      font-family: $headingFontFamily;
+      font-weight: 500;
     }
 
     .left-part {
+      flex-basis: 100%;
 
       h4 {
         text-align: left;
         color: $subscibeHeading;
-        font-size: 24px;
-        line-height: 29px;
+        font-size: 1.6vw;
         margin-bottom: 24px;
+        font-family: $headingFontFamily;
+        font-weight: 500;
       }
 
       p {
 
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 1.3vw;
         color: $subscibeParagraf;
+        font-family: $bodyFontFamily;
+        font-weight: 400;
+        line-height: 1.2;
       }
     }
 
     .right-part {
-
+      flex-basis: 100%;
+      padding: 6.5vw 0 0 8vw;
 
       form {
 
@@ -49,8 +55,9 @@
           width: 100%;
 
           &[type="text"] {
-            font-size: 18px;
-            line-height: 23px;
+            font-size: 1.3vw;
+            font-family: $bodyFontFamily;
+            font-weight: 400;
             color: $subscibeFormtext;
             border-bottom: 1px solid $subscibeBorder;
           }

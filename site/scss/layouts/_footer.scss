@@ -1,45 +1,47 @@
 .footer {
   display: flex;
   background: $footerBg;
-  height: 532px;
 
   .footer-content {
-    width: 25%;
-    padding: 153px 50px 0 50px;
+    flex-basis: 25%;
+    padding: 10.5vw 4vw 10.5vw 4vw;
     position: relative;
 
     .privacy {
       display: flex;
       position: absolute;
       bottom: 36px;
-      right: 50px;
+      right: 4vw;
 
       p {
-        font-size: 12px;
-        line-height: 18px;
+        font-size: 1vw;
+        font-family: $bodyFontFamily;
         color: $privacyParagraf;
+        font-weight: 400;
 
         span {
-          font-size: 12px;
-          line-height: 18px;
-          margin-left: 27px;
+          font-size: 1vw;
+          margin-left: 1.6vw;
           color: $privacyParagraf;
+          font-family: $bodyFontFamily;
+          font-weight: 400;
         }
       }
     }
 
     h5 {
       color: $footerHeading;
-      font-size: 14px;
-      line-height: 17px;
+      font-size: 1vw;
       margin-bottom: 10px;
-
+      font-family: $headingFontFamily;
+      font-weight: 400;
     }
 
     p {
-      font-size: 18px;
-      line-height: 23px;
+      font-size: 1.3vw;
       color: $footerParagraf;
+      font-family: $bodyFontFamily;
+      font-weight: 400;
 
       &:nth-child(2) {
         margin-bottom: 77px;
@@ -49,14 +51,14 @@
     a {
       display: block;
       color: $footerParagraf;
-      font-size: 18px ;
-      line-height: 23px;
+      font-size: 1.3vw ;
     }
 
     h4 {
-      font-size: 24px;
-      line-height: 29px;
+      font-size: 1.6vw;
       color: $footerHeading;
+      font-family: $bodyFontFamily;
+      font-weight: 400;
     }
   }
 }
