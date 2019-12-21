@@ -1,122 +1,57 @@
 .blog {
   background: $blogBg;
-  padding: 264px 130px 0 0;
   position: relative;
-  z-index: 1;
 
   .blog-content {
     display: flex;
-
-    &::before {
-      content: 'Studio';
-      position: absolute;
-      left: 90px;
-      top: 166px;
-      font-size: 232px;
-      line-height: 125px;
-      z-index: -1;
-      color: $blogBigHeading;
-    }
+    justify-content: space-between;
 
     .left-part {
-      width: 683px;
-      margin-left: -1px;
+      flex-basis: 45%;
+      padding-top: 24vw;
+      z-index: 1;
 
-      img {
-        max-width: 100%;
-        height: auto;
+      &::before {
+        content: 'Studio';
+        position: absolute;
+        font-size: 16vw;
+        color: $blogBigHeading;
+        top: 11vw;
+        left: 5vw;
+        z-index: -1;
+        font-family: $headingFontFamily;
+        font-weight: 500;
       }
     }
 
     .right-part {
-      padding: 123px 0 0 124px;
-      width: 500px;
+      flex-basis: 50%;
+      padding: 30vw 13vw 0 0;
+
 
       h2 {
-        font-size: 60px;
-        line-height: 63px;
+        font-size: 4vw;
+        line-height: 1.1;
         color: $blogHeading;
+        font-family: $headingFontFamily;
+        font-weight: 500;
       }
 
       h5 {
         margin-top: 20px;
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 1.3vw;
         color: $blogSmallHeading;
-        margin-bottom: 70px;
+        margin-bottom: 4.3vw;
+        font-family: $headingFontFamily;
+        font-weight: 500;
       }
 
       p {
-        font-size: 18px;
-        line-height: 22px;
+        font-size: 1.3vw;
         color: $blogParagraf;
-
-      }
-    }
-  }
-}
-@media (max-width: 1200px) {
-
-  .blog {
-    padding: 190px 70px 0 0;
-
-    .blog-content {
-
-      &::before {
-        top: 80px;
-        left: 70px;
-        font-size: 210px;
-      }
-
-      .right-part {
-        padding: 123px 0 0 100px;
-
-        h2{
-          font-size: 55px;
-        }
-
-        h5{
-          font-size: 18px;
-        }
-
-        p{
-          font-size: 18px;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 992px) {
-
-  .blog {
-    padding: 140px 40px 0 0;
-
-    .blog-content {
-
-      &::before {
-        top: 60px;
-        left: 40px;
-        font-size: 170px;
-      }
-
-      .right-part {
-        padding: 50px 0 0 60px;
-
-
-        h2{
-          font-size: 48px;
-          line-height: 51px;
-        }
-
-        h5{
-          margin-top: 5px;
-          font-size: 16px;
-          margin-bottom: 10px;
-        }
-
-        p{
-          font-size: 14px;
-        }
+        font-family: $bodyFontFamily;
+        font-weight: 400;
+        line-height: 1.2;
       }
     }
   }

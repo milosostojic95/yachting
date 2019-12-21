@@ -1,20 +1,19 @@
 const path = require('path');
-var MiniCssExtractPlugin = require('mini-css-extract-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-
-  module.exports = {
-    entry: require.resolve('./site/js/index.js'),
-    context: __dirname,
-    mode: 'development',
-    output: {
-      path: path.resolve(__dirname, './site/dist'),
-      filename: 'main.[contentHash].js'
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+module.exports = {
+  entry: require.resolve('./site/js/index.js'),
+  context: __dirname,
+  mode: 'development',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js'
   },
   plugins:[
     new HtmlWebpackPlugin({
       template: "./site/template.html"
     }), new MiniCssExtractPlugin({
-      filename:"[name].[contentHash].css"
+      filename:"[name].css"
     })
   ],
   module: {
@@ -27,10 +26,10 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
         test: /\.(svg|png|jpg|gif)$/,
         use: [
           {
-            loader:"file-loader",
+            loader: 'file-loader',
             options: {
-              name:"[name].[contentHash].[ext]",
-              outputPath:"imgs",
+              name:"[name].[ext]",
+              outputPath: 'imgs',
               esModule: false
             }
           }
@@ -42,14 +41,13 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
           loader: 'html-loader',
         }
       },{
-        test:/\.(woff2|woff|otf|ttf)scss$/,
+        test:/\.(woff2|woff|otf|ttf)?$/,
         use:[
           {
-            loader:"file-loader",
+            loader: 'file-loader',
             options: {
-              name:"[name].[hash].[ext]",
-              outputPath: "fonts/",
-              esModule: false,
+              name: '[name].[ext]',
+              outputPath: 'fonts',
             }
           }
         ]

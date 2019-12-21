@@ -1,29 +1,46 @@
+// Global
+$bodyFontFamily: 'Orkney', sans-serif;
+$headingFontFamily: 'Wirgnum', sans-serif;
+
+
+// navigation
 $navBg:#ffffff;
 $navLogo:#525252;
 $navLink:#5C5C5C;
+$navActiveLink: #CECFCA;
+// Home
+
 $introHeading:#5F5F5F;
 $introLine:#5F5F5F;
 $introLinks:#5F5F5F;
+
+// Service
 $serviceIntro:rgba(95,95,95,0.07);
 $serviceHeading:#B4B4B4;
 $serviceSpan:#646464;
 $serviceBtn:#6A6A6A;
+
+// Blog
 $blogBg:#252525;
 $blogHeading:#CECFCA;
 $blogBigHeading:rgba(95,95,95,0.53);
 $blogSmallHeading:#525252;
 $blogParagraf:#CECFCA;
+
+// Subscribe
 $subscibeHeading:#757575;
 $subscibeBg:#ECE9E4;
 $subscibeParagraf:#AAAAAA;
 $subscibeFormtext:#AAAAAA;
 $subscibeBorder:#BDBDBD;
 $subscibeBtn:#5F5F5F;
+
+// Footer
 $footerBg:#252525;
 $footerHeading:#5F5F5F;
 $footerParagraf:#CECFCA;
 $topBtnBg:#ffffff;
 $privacyParagraf:#5F5F5F;
-$bodyFontFamily: 'Orkney', sans-serif;
-$headersFontFamlily: 'Wirgnum', sans-serif;
+
+
 

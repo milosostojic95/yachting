@@ -1,80 +1,34 @@
 .service {
-  padding: 287px 0 0 0;
+  padding: 20vw 0 0 0;
   position: relative;
-  z-index: 1;
+
+  &::before {
+    content: 'Services';
+    position: absolute;
+    font-size: 16vw;
+    color: $serviceIntro;
+    right: 0;
+    top: 7vw;
+    font-family: $headingFontFamily;
+    font-weight: 500;
+  }
 
   .service-content {
 
-    &::before {
-      content: 'Services';
-      position: absolute;
-      font-size: 232px;
-      line-height: 125px;
-      color: $serviceIntro;
-      top: 175px;
-      right: -46px;
-      z-index: -1;
-    }
     h2 {
       text-align: center;
-      font-size: 52px;
-      line-height: 93px;
+      font-size: 4vw;
+      line-height: .9;
       color: $serviceHeading;
+      font-family: $headingFontFamily;
+      font-weight: 500;
 
       span {
-        font-size: 86px;
+        font-size: 6vw;
         color: $serviceSpan;
 
         &:last-of-type {
-          font-size: 120px;
-        }
-      }
-    }
-  }
-}
-@media (max-width: 1200px) {
-  .service {
-
-    .service-content {
-
-      &::before {
-        font-size: 180px;
-      }
-
-      h2{
-        font-size: 40px;
-
-        span {
-          font-size: 74px;
-          color: $serviceSpan;
-
-          &:last-of-type {
-            font-size: 108px;
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 992px) {
-  .service {
-
-    .service-content {
-
-      &::before {
-        font-size: 160px;
-      }
-
-      h2{
-        font-size: 28px;
-
-        span {
-          font-size: 62px;
-          color: $serviceSpan;
-
-          &:last-of-type {
-            font-size: 96px;
-          }
+          font-size: 8vw;
         }
       }
     }

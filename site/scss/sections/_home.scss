@@ -2,109 +2,34 @@
   background: $navBg;
 
   .home-into {
-    padding: 107px 0 140px 94px;
-    position: relative;
+    margin: 7vw 5vw 10vw 5vw;
 
     h1 {
-      font-size: 130px;
+      font-size: 9vw;
       color: $introHeading;
-      line-height: 118px;
-    }
-
-    a {
-      position: absolute;
-      right: 54px;
-      bottom: 29px;
-      transform: rotate(90deg);
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 18px;
-      color: $introLinks;
+      line-height: 1;
+      font-family: $headingFontFamily;
+      font-weight: 500;
     }
   }
+
   .home-img {
-    width: 100%;
+    flex-basis: 100%;
     position: relative;
 
     &::before {
-      content: '';
       position: absolute;
+      content: '';
+      width: 1px;
+      height: 81px;
+      background: $introLine;
       top: 0;
       left: 50%;
       transform: translateX(-50%);
-      height: 81px;
-      width: 1px;
-      background: $introLine;
-      transform-origin: top;
     }
 
     img {
       max-width: 100%;
-      height: auto;
-    }
-
-    a {
-      position: absolute;
-      top: 40px;
-      right: 47px;
-      transform: rotate(90deg);
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 18px;
-      color: $introLinks;
     }
   }
 }
-@media (max-width: 1200px) {
-  .home {
-
-    .home-into {
-      padding: 107px 0 140px 70px;
-
-      h1 {
-        font-size: 105px;
-
-      }
-
-      a {
-        font-size: 12px;
-        right: 34px;
-      }
-    }
-
-    .home-img {
-
-      a{
-        right: 26px;
-        font-size: 12px;
-      }
-    }
-  }
-}
-@media (max-width: 992px) {
-  .home {
-
-    .home-into {
-      padding: 97px 0 120px 40px;
-
-      h1 {
-        font-size: 85px;
-
-      }
-
-      a {
-        right: 14px;
-        font-size: 12px;
-      }
-    }
-
-    .home-img {
-
-      a{
-        right: 6px;
-        font-size: 12px;
-      }
-    }
-  }
-}
-

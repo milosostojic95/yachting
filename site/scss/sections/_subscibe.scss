@@ -6,7 +6,7 @@
 
   .subscribe-content {
     background: $subscibeBg;
-    display: flex;
+
     padding: 109px 112px 115px 112px;
 
     &::before {
@@ -15,7 +15,7 @@
       top: 101px;
       left: 90px;
       color: rgba(95,95,95,0.53);
-      font-size: 225px;
+
       line-height: 125px;
       z-index: -1;
     }
@@ -31,7 +31,7 @@
       }
 
       p {
-        width: 455px;
+
         font-size: 18px;
         line-height: 23px;
         color: $subscibeParagraf;
@@ -39,7 +39,7 @@
     }
 
     .right-part {
-      padding: 90px 0 0 112px;
+
 
       form {
 
@@ -57,83 +57,6 @@
 
           &:nth-child(2) {
             margin-top: 22px;
-          }
-        }
-      }
-    }
-  }
-}
-@media (max-width: 1200px) {
-
-  .subscribe {
-    padding: 199px 0 0 200px;
-
-    .subscribe-content {
-      padding: 90px 80px 115px 80px;
-
-      &::before {
-        font-size: 160px;
-      }
-
-      .left-part {
-
-        p {
-          width: 350px;
-        }
-      }
-
-      .right-part {
-        padding: 80px 0 0 70px;
-      }
-    }
-  }
-}
-@media (max-width: 992px) {
-
-  .subscribe {
-    padding: 170px 0 0 100px;
-
-    .subscribe-content {
-      padding: 70px 80px 80px 40px;
-
-      &::before {
-        left: 40px;
-        top: 70px;
-        font-size: 160px;
-      }
-
-      .left-part {
-
-        h4 {
-          font-size: 22px;
-        }
-
-        p {
-          width: 320px;
-          font-size: 16px;
-        }
-      }
-
-      .right-part {
-        padding: 80px 0 0 70px;
-
-        form {
-
-          input {
-            background: transparent;
-            border: none;
-            width: 100%;
-
-            &[type="text"] {
-              font-size: 16px;
-              line-height: 23px;
-              color: $subscibeFormtext;
-              border-bottom: 1px solid $subscibeBorder;
-            }
-
-            &:nth-child(2) {
-              margin-top: 22px;
-            }
           }
         }
       }

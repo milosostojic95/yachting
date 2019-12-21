@@ -1,10 +1,14 @@
-@import "./base/variables";
-@import "./layouts/header";
-@import "./layouts/base";
-@import "./sections/home";
-@import "./sections/service";
-@import "./sections/blog";
-@import "./sections/subscibe";
-@import "./layouts/footer";
-@import "./components/buttons";
+@import './base/variables';
+@import './layouts/base';
+@import './base/fonts';
+
+@import './sections/home';
+@import './sections/service';
+@import './sections/blog';
+@import './sections/subscibe';
+
+@import './layouts/footer';
+@import './layouts/header';
+@import './components/buttons';
+
 
