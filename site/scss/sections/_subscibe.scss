@@ -1,12 +1,12 @@
 .subscribe {
   position: relative;
   background: $blogBg;
-  padding: 16vw 0 0 20vw;
+  padding: 17vw 0 0 20vw;
   z-index: 1;
 
   .subscribe-content {
     background: $subscibeBg;
-    padding: 8vw 7.5vw;
+    padding: 7.5vw 7.5vw;
     display: flex;
 
     &::before {
@@ -28,13 +28,13 @@
         text-align: left;
         color: $subscibeHeading;
         font-size: 1.6vw;
-        margin-bottom: 24px;
+        margin-bottom: 14px;
         font-family: $headingFontFamily;
         font-weight: 500;
       }
 
       p {
-
+        margin: 20px 0;
         font-size: 1.3vw;
         color: $subscibeParagraf;
         font-family: $bodyFontFamily;
