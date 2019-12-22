@@ -1,10 +1,10 @@
-nav {
+.main-nav {
+  padding-top: 4rem;
 
   .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin: 4vw 5vw 0 5vw;
+    align-items: center;
 
     .navbar-logo {
       a {

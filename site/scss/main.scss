@@ -1,14 +1,27 @@
+//base
+
 @import './base/variables';
-@import './layouts/base';
 @import './base/fonts';
+
+// respnosive
+
+@import './mixin/breakpoint';
+
+//section
 
 @import './sections/home';
 @import './sections/service';
 @import './sections/blog';
 @import './sections/subscibe';
 
+//layouts
+
 @import './layouts/footer';
 @import './layouts/header';
+@import './layouts/base';
+
+// components
+
 @import './components/buttons';
 
 

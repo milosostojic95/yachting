@@ -41,7 +41,7 @@ module.exports = {
           loader: 'html-loader',
         }
       },{
-        test:/\.(woff2|woff|otf|ttf)?$/,
+        test:/\.(woff2|woff|otf|ttf)$/,
         use:[
           {
             loader: 'file-loader',
