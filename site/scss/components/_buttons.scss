@@ -69,14 +69,14 @@
   align-items: center;
   cursor: pointer;
 
-  @include breakpoint (smallTablet) {
-    flex-basis: 100%;
-    padding: 20px 0;
-  }
-
   @include breakpoint (mobile) {
     flex-basis: 100%;
     padding:20px 0;
+  }
+
+  @include breakpoint (smallTablet) {
+    flex-basis: 100%;
+    padding: 20px 0;
   }
 
   @include breakpoint (tablet) {

@@ -2,15 +2,12 @@
   padding-top: 4rem;
 
   @include breakpoint (mobile) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 2rem;
+    padding: 2rem 2rem 0;
   }
 
   @include breakpoint (smallTablet) {
-    padding: 4rem 2rem 0 2rem;
+    padding: 4rem 2rem 0;
   }
-
 
   .navbar {
     display: flex;
@@ -37,7 +34,6 @@
           height: 2px;
         }
       }
-
     }
 
     .navbar-logo {
@@ -50,12 +46,12 @@
           font-family: $headingFontFamily;
           font-weight: 500;
 
-          @include breakpoint (smallTablet) {
-            font-size: 4vw;
-          }
-
           @include breakpoint (mobile) {
             font-size: 4.5vw;
+          }
+
+          @include breakpoint (smallTablet) {
+            font-size: 4vw;
           }
         }
       }

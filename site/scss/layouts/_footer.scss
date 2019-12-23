@@ -5,10 +5,6 @@
   @include breakpoint (mobile) {
     flex-wrap: wrap;
   }
-  @include breakpoint (smallTablet) {
-    display: flex;
-    flex-wrap: wrap;
-  }
 
   @include breakpoint (tablet) {
     display: flex;
@@ -31,7 +27,6 @@
     @include breakpoint (tablet) {
       flex-basis: 25%;
     }
-
 
     .privacy {
       display: flex;
@@ -122,8 +117,6 @@
       @include breakpoint (desktop) {
         font-size: 16px;
       }
-
-
     }
 
     p {
@@ -149,8 +142,6 @@
       @include breakpoint (desktop) {
         font-size: 20px;
       }
-
-
 
       &:nth-child(2) {
         margin-bottom: 77px;
