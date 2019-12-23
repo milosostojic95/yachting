@@ -6,10 +6,29 @@
     display: flex;
     justify-content: space-between;
 
+    @include breakpoint (mobile) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint (smallTablet) {
+      flex-wrap: nowrap;
+    }
+
     .left-part {
       flex-basis: 45%;
       padding-top: 24vw;
       z-index: 1;
+
+      @include breakpoint (mobile) {
+        flex-basis: 90%;
+        margin: 0 auto;
+      }
+
+      @include breakpoint (smallTablet) {
+        flex-basis: 45%;
+        margin: 0;
+      }
 
       &::before {
         content: 'Studio';
@@ -28,13 +47,24 @@
       flex-basis: 50%;
       padding: 30vw 13vw 0 0;
 
+      @include breakpoint (mobile) {
+        padding: 20px 0 0;
+        flex-basis: 90%;
+        margin: 0 auto;
+      }
+
       @include breakpoint (smallTablet) {
         padding-top: 27vw;
+        flex-basis: 50%;
+        padding-right: 6vw;
       }
 
       @include breakpoint (tablet) {
         padding-top: 30vw;
+
       }
+
+
 
       h2 {
         font-size: 4vw;
@@ -42,6 +72,11 @@
         color: $blogHeading;
         font-family: $headingFontFamily;
         font-weight: 500;
+
+        @include breakpoint (mobile) {
+          text-align: left;
+          font-size: 6.3vw;
+        }
       }
 
       h5 {
@@ -51,6 +86,10 @@
         margin-bottom: 4.3vw;
         font-family: $headingFontFamily;
         font-weight: 500;
+
+        @include breakpoint (mobile) {
+          font-size: 14px;
+        }
 
         @include breakpoint (smallTablet) {
           margin-top: 15px;
@@ -79,7 +118,7 @@
 
         @include breakpoint (smallTablet) {
           font-size: 16px;
-          line-height: 1.1;
+          line-height: 1.2;
         }
 
         @include breakpoint (tablet) {
@@ -90,6 +129,10 @@
         @include breakpoint (desktop) {
           font-size: 20px;
           line-height: 1.3;
+        }
+
+        @include breakpoint (mobile) {
+          font-size: 14px;
         }
       }
     }

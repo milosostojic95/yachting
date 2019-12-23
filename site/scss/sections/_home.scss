@@ -16,6 +16,10 @@
       margin: 6.5rem 2rem 8.5rem;
     }
 
+    @include breakpoint (mobile) {
+      margin: 3rem 2rem 6rem;
+    }
+
     h1 {
       font-size: 9vw;
       color: $introHeading;
@@ -32,6 +36,10 @@
       }
 
       @include breakpoint (smallTablet) {
+        font-size: 11vw;
+      }
+
+      @include breakpoint (mobile) {
         font-size: 11vw;
       }
     }

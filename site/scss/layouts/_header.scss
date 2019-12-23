@@ -11,8 +11,7 @@
   }
 
   @include breakpoint (smallTablet) {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding: 4rem 2rem 0 2rem;
   }
   @include breakpoint (mobile) {
     padding-left: 2rem;
@@ -48,6 +47,14 @@
     .navbar-nav {
       display: flex;
       justify-content: space-between;
+
+      @include breakpoint (mobile) {
+        display: none;
+      }
+
+      @include breakpoint (smallTablet) {
+        display: flex;
+      }
 
       li {
         padding-right: 30px;

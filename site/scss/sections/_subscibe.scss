@@ -4,9 +4,12 @@
   background: $blogBg;
   padding: 17vw 0 0 20vw;
   z-index: 1;
+  @include breakpoint (mobile) {
+    padding: 17vw 0 0;
+  }
 
   @include breakpoint (smallTablet) {
-    padding: 17vw 0 0;
+
   }
 
   @include breakpoint (tablet) {
@@ -18,10 +21,19 @@
     padding: 7.5vw 7.5vw;
     display: flex;
 
+    @include breakpoint (mobile) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @include breakpoint (smallTablet) {
+      flex-wrap: nowrap;
+    }
+
     &::before {
       position: absolute;
       content: 'Subscribe';
-      top: 5vw;
+      top: 4.8vw;
       left: 5vw;
       color: rgba(95,95,95,0.53);
       font-size: 16vw;
@@ -44,6 +56,11 @@
         @include breakpoint (smallTablet) {
           font-size: 2.4vw;
         }
+
+        @include breakpoint (mobile) {
+          text-align: center;
+          font-size: 4vw;
+        }
       }
 
       p {
@@ -65,12 +82,24 @@
         @include breakpoint (desktop) {
           font-size: 20px;
         }
+
+        @include breakpoint (mobile) {
+          font-size: 14px;
+        }
       }
     }
 
     .right-part {
       flex-basis: 100%;
       padding: 6.5vw 0 0 8vw;
+
+      @include breakpoint (mobile) {
+        padding-left: 0;
+      }
+
+      @include breakpoint (smallTablet) {
+        padding-left: 8vw;
+      }
 
       form {
 
@@ -96,6 +125,10 @@
 
             @include breakpoint (desktop) {
               font-size: 20px;
+            }
+
+            @include breakpoint (mobile) {
+              font-size: 14px;
             }
           }
 

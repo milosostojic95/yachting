@@ -9,6 +9,10 @@
   font-family: $bodyFontFamily;
   font-weight: 400;
 
+  @include breakpoint (mobile) {
+    font-size: 14px;
+  }
+
   @include breakpoint (smallTablet) {
     font-size: 16px;
   }
@@ -20,6 +24,7 @@
   @include breakpoint (desktop) {
     font-size: 20px;
   }
+
 
   svg{
     margin-left: 13px;
@@ -63,6 +68,11 @@
   @include breakpoint (smallTablet) {
     flex-basis: 100%;
     padding: 20px 0;
+  }
+
+  @include breakpoint (mobile) {
+    flex-basis: 100%;
+    padding:20px 0;
   }
 
   @include breakpoint (tablet) {

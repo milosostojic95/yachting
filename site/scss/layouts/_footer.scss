@@ -2,6 +2,9 @@
   display: flex;
   background: $footerBg;
 
+  @include breakpoint (mobile) {
+    flex-wrap: wrap;
+  }
   @include breakpoint (smallTablet) {
     display: flex;
     flex-wrap: wrap;
@@ -9,12 +12,17 @@
 
   @include breakpoint (tablet) {
     display: flex;
+    flex-wrap: nowrap;
   }
 
   .footer-content {
     flex-basis: 25%;
     padding: 9vw 4vw 9vw 4vw;
     position: relative;
+
+    @include breakpoint (mobile) {
+      flex-basis: 100%;
+    }
 
     @include breakpoint (smallTablet) {
       flex-basis: 33%;
@@ -30,6 +38,17 @@
       position: absolute;
       bottom: 30px;
       right: 4vw;
+
+      @include breakpoint (mobile) {
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
+      }
+
+      @include breakpoint (smallTablet) {
+        bottom: 30px;
+        margin: 0 auto;
+      }
 
       p {
         font-size: 14px;
@@ -47,6 +66,10 @@
 
         @include breakpoint (desktop) {
           font-size: 16px;
+        }
+
+        @include breakpoint (mobile) {
+          font-size: 10px;
         }
 
         span {
@@ -67,6 +90,10 @@
           @include breakpoint (desktop) {
             font-size: 16px;
           }
+
+          @include breakpoint (mobile) {
+            font-size: 10px;
+          }
         }
       }
     }
@@ -78,8 +105,14 @@
       font-family: $headingFontFamily;
       font-weight: 400;
 
+      @include breakpoint (mobile) {
+        text-align: center;
+        font-size: 14px;
+      }
+
       @include breakpoint (smallTablet) {
         font-size: 12px;
+        text-align: left;
       }
 
       @include breakpoint (tablet) {
@@ -89,6 +122,8 @@
       @include breakpoint (desktop) {
         font-size: 16px;
       }
+
+
     }
 
     p {
@@ -97,8 +132,14 @@
       font-family: $bodyFontFamily;
       font-weight: 400;
 
+      @include breakpoint (mobile) {
+        text-align: center;
+        font-size: 14px;
+      }
+
       @include breakpoint (smallTablet) {
         font-size: 16px;
+        text-align: left;
       }
 
       @include breakpoint (tablet) {
@@ -108,6 +149,8 @@
       @include breakpoint (desktop) {
         font-size: 20px;
       }
+
+
 
       &:nth-child(2) {
         margin-bottom: 77px;
@@ -119,6 +162,15 @@
       color: $footerParagraf;
       font-size: 18px ;
 
+      @include breakpoint (mobile) {
+        text-align: center;
+        font-size: 14px;
+      }
+
+      @include breakpoint (smallTablet) {
+        text-align: left;
+      }
+
       &:hover {
         color: $privacyParagraf;
       }
@@ -129,9 +181,14 @@
       color: $footerHeading;
       font-family: $bodyFontFamily;
       font-weight: 400;
+      @include breakpoint (mobile) {
+        font-size: 20px;
+        text-align: center;
+      }
 
       @include breakpoint (smallTablet) {
         font-size: 22px;
+        text-align: left;
       }
 
       @include breakpoint (tablet) {
