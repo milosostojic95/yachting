@@ -17,6 +17,29 @@
     justify-content: space-between;
     align-items: center;
 
+    .burger {
+
+      @include breakpoint (mobile) {
+        display: block;
+        width: 20px;
+        height: 20px;
+      }
+
+      @include breakpoint (smallTablet) {
+        display: none;
+      }
+      .burger-lines {
+
+        @include breakpoint (mobile) {
+          background: $navLogo;
+          margin: 3px 0;
+          width: 100%;
+          height: 2px;
+        }
+      }
+
+    }
+
     .navbar-logo {
       a {
         display: inline-block;
