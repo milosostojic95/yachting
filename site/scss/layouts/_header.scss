@@ -1,6 +1,24 @@
 .main-nav {
   padding-top: 4rem;
 
+  @include breakpoint (laptop) {
+    padding: 4rem 2rem 0 2rem;
+  }
+
+  @include breakpoint (tablet) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include breakpoint (smallTablet) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  @include breakpoint (mobile) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -15,6 +33,14 @@
           color: $navLogo;
           font-family: $headingFontFamily;
           font-weight: 500;
+
+          @include breakpoint (smallTablet) {
+            font-size: 4vw;
+          }
+
+          @include breakpoint (mobile) {
+            font-size: 4.5vw;
+          }
         }
       }
     }
@@ -31,11 +57,23 @@
         }
 
         a {
-          font-size: 1.3vw;
+          font-size: 18px;
           color: $navLink;
           display: inline-block;
           font-family: $bodyFontFamily;
           font-weight: 400;
+
+          @include breakpoint (smallTablet) {
+            font-size: 16px;
+          }
+
+          @include breakpoint (tablet) {
+            font-size: 18px;
+          }
+
+          @include breakpoint (desktop) {
+            font-size: 20px;
+          }
 
           &:hover {
             color: $navActiveLink;
@@ -44,4 +82,12 @@
       }
     }
   }
+}
+.social-media {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  z-index: 2;
+  display: none;
 }

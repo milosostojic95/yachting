@@ -5,6 +5,14 @@
   padding: 17vw 0 0 20vw;
   z-index: 1;
 
+  @include breakpoint (smallTablet) {
+    padding: 17vw 0 0;
+  }
+
+  @include breakpoint (tablet) {
+    padding: 17vw 0 0 20vw;
+  }
+
   .subscribe-content {
     background: $subscibeBg;
     padding: 7.5vw 7.5vw;
@@ -32,15 +40,31 @@
         margin-bottom: 14px;
         font-family: $headingFontFamily;
         font-weight: 500;
+
+        @include breakpoint (smallTablet) {
+          font-size: 2.4vw;
+        }
       }
 
       p {
         margin: 20px 0;
-        font-size: 1.3vw;
+        font-size: 18px;
         color: $subscibeParagraf;
         font-family: $bodyFontFamily;
         font-weight: 400;
         line-height: 1.2;
+
+        @include breakpoint (smallTablet) {
+          font-size: 16px;
+        }
+
+        @include breakpoint (tablet) {
+          font-size: 18px;
+        }
+
+        @include breakpoint (desktop) {
+          font-size: 20px;
+        }
       }
     }
 
@@ -56,11 +80,23 @@
           width: 100%;
 
           &[type="text"] {
-            font-size: 1.3vw;
+            font-size: 18px;
             font-family: $bodyFontFamily;
             font-weight: 400;
             color: $subscibeFormtext;
             border-bottom: 1px solid $subscibeBorder;
+
+            @include breakpoint (smallTablet) {
+              font-size: 16px;
+            }
+
+            @include breakpoint (tablet) {
+              font-size: 18px;
+            }
+
+            @include breakpoint (desktop) {
+              font-size: 20px;
+            }
           }
 
           &:nth-child(2) {

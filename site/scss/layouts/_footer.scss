@@ -2,46 +2,112 @@
   display: flex;
   background: $footerBg;
 
+  @include breakpoint (smallTablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @include breakpoint (tablet) {
+    display: flex;
+  }
+
   .footer-content {
     flex-basis: 25%;
     padding: 9vw 4vw 9vw 4vw;
     position: relative;
 
+    @include breakpoint (smallTablet) {
+      flex-basis: 33%;
+    }
+
+    @include breakpoint (tablet) {
+      flex-basis: 25%;
+    }
+
+
     .privacy {
       display: flex;
       position: absolute;
-      bottom: 36px;
+      bottom: 30px;
       right: 4vw;
 
       p {
-        font-size: 1vw;
+        font-size: 14px;
         font-family: $bodyFontFamily;
         color: $privacyParagraf;
         font-weight: 400;
 
+        @include breakpoint (smallTablet) {
+          font-size: 12px;
+        }
+
+        @include breakpoint (tablet) {
+          font-size: 12px;
+        }
+
+        @include breakpoint (desktop) {
+          font-size: 16px;
+        }
+
         span {
-          font-size: 1vw;
+          font-size: 14px;
           margin-left: 1.6vw;
           color: $privacyParagraf;
           font-family: $bodyFontFamily;
           font-weight: 400;
+
+          @include breakpoint (smallTablet) {
+            font-size: 12px;
+          }
+
+          @include breakpoint (tablet) {
+            font-size: 12px;
+          }
+
+          @include breakpoint (desktop) {
+            font-size: 16px;
+          }
         }
       }
     }
 
     h5 {
       color: $footerHeading;
-      font-size: 1vw;
+      font-size: 14px;
       margin-bottom: 10px;
       font-family: $headingFontFamily;
       font-weight: 400;
+
+      @include breakpoint (smallTablet) {
+        font-size: 12px;
+      }
+
+      @include breakpoint (tablet) {
+        font-size: 12px;
+      }
+
+      @include breakpoint (desktop) {
+        font-size: 16px;
+      }
     }
 
     p {
-      font-size: 1.3vw;
+      font-size: 18px;
       color: $footerParagraf;
       font-family: $bodyFontFamily;
       font-weight: 400;
+
+      @include breakpoint (smallTablet) {
+        font-size: 16px;
+      }
+
+      @include breakpoint (tablet) {
+       font-size: 16px;
+      }
+
+      @include breakpoint (desktop) {
+        font-size: 20px;
+      }
 
       &:nth-child(2) {
         margin-bottom: 77px;
@@ -51,14 +117,30 @@
     a {
       display: block;
       color: $footerParagraf;
-      font-size: 1.3vw ;
+      font-size: 18px ;
+
+      &:hover {
+        color: $privacyParagraf;
+      }
     }
 
     h4 {
-      font-size: 1.6vw;
+      font-size: 24px;
       color: $footerHeading;
       font-family: $bodyFontFamily;
       font-weight: 400;
+
+      @include breakpoint (smallTablet) {
+        font-size: 22px;
+      }
+
+      @include breakpoint (tablet) {
+       font-size: 22px;
+      }
+
+      @include breakpoint (desktop) {
+        font-size: 26px;
+      }
     }
   }
 }

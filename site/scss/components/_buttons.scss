@@ -4,10 +4,22 @@
   background: transparent;
   border: none;
   display: block;
-  margin: 44px auto 317px auto;
+  margin: 44px auto 22vw auto;
   cursor: pointer;
   font-family: $bodyFontFamily;
   font-weight: 400;
+
+  @include breakpoint (smallTablet) {
+    font-size: 16px;
+  }
+
+  @include breakpoint (tablet) {
+    font-size: 18px;
+  }
+
+  @include breakpoint (desktop) {
+    font-size: 20px;
+  }
 
   svg{
     margin-left: 13px;
@@ -23,18 +35,40 @@
   float: right;
   cursor: pointer;
 
+  @include breakpoint (smallTablet) {
+    font-size: 16px;
+  }
+
+  @include breakpoint (tablet) {
+    font-size: 18px;
+  }
+
+  @include breakpoint (desktop) {
+    font-size: 20px;
+  }
+
   svg {
     margin-left: 13px;
   }
 }
 
 .top-button {
-  width: 25%;
+  flex-basis: 25%;
   background: $topBtnBg;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  @include breakpoint (smallTablet) {
+    flex-basis: 100%;
+    padding: 20px 0;
+  }
+
+  @include breakpoint (tablet) {
+    flex-basis: 25%;
+    padding: 0;
+  }
 
   a {
     display: block;
