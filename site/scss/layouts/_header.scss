@@ -1,22 +1,16 @@
 .main-nav {
   padding-top: 4rem;
 
-  @include breakpoint (laptop) {
-    padding: 4rem 2rem 0 2rem;
-  }
-
-  @include breakpoint (tablet) {
+  @include breakpoint (mobile) {
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 2rem;
   }
 
   @include breakpoint (smallTablet) {
     padding: 4rem 2rem 0 2rem;
   }
-  @include breakpoint (mobile) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+
 
   .navbar {
     display: flex;

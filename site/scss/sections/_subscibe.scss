@@ -4,12 +4,9 @@
   background: $blogBg;
   padding: 17vw 0 0 20vw;
   z-index: 1;
+
   @include breakpoint (mobile) {
-    padding: 17vw 0 0;
-  }
-
-  @include breakpoint (smallTablet) {
-
+    padding: 18vw 0 0;
   }
 
   @include breakpoint (tablet) {
@@ -53,13 +50,13 @@
         font-family: $headingFontFamily;
         font-weight: 500;
 
-        @include breakpoint (smallTablet) {
-          font-size: 2.4vw;
+        @include breakpoint (mobile) {
+          text-align: left;
+          font-size: 6vw;
         }
 
-        @include breakpoint (mobile) {
-          text-align: center;
-          font-size: 4vw;
+        @include breakpoint (smallTablet) {
+          font-size: 2.4vw;
         }
       }
 
@@ -71,6 +68,10 @@
         font-weight: 400;
         line-height: 1.2;
 
+        @include breakpoint (mobile) {
+          font-size: 14px;
+        }
+
         @include breakpoint (smallTablet) {
           font-size: 16px;
         }
@@ -81,10 +82,6 @@
 
         @include breakpoint (desktop) {
           font-size: 20px;
-        }
-
-        @include breakpoint (mobile) {
-          font-size: 14px;
         }
       }
     }
@@ -115,6 +112,10 @@
             color: $subscibeFormtext;
             border-bottom: 1px solid $subscibeBorder;
 
+            @include breakpoint (mobile) {
+              font-size: 14px;
+            }
+
             @include breakpoint (smallTablet) {
               font-size: 16px;
             }
@@ -125,10 +126,6 @@
 
             @include breakpoint (desktop) {
               font-size: 20px;
-            }
-
-            @include breakpoint (mobile) {
-              font-size: 14px;
             }
           }
 

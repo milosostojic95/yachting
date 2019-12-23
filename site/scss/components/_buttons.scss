@@ -40,6 +40,10 @@
   float: right;
   cursor: pointer;
 
+  @include breakpoint (mobile) {
+    font-size: 14px;
+  }
+
   @include breakpoint (smallTablet) {
     font-size: 16px;
   }
