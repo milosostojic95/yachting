@@ -111,6 +111,7 @@
             font-weight: 400;
             color: $subscibeFormtext;
             border-bottom: 1px solid $subscibeBorder;
+            padding-bottom: 11px;
 
             @include breakpoint (mobile) {
               font-size: 14px;
