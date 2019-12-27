@@ -19,6 +19,7 @@
   "homepage": "https://github.com/milosostojic95/yachting#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.3.0",
     "file-loader": "^5.0.2",
     "html": "^1.0.0",

@@ -1,0 +1,47 @@
+.service-form {
+  margin-top: 10vw;
+  background: $serviceFormBg;
+  padding: 10vw 0 10vw;
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 29%;
+
+    h3 {
+      font-size: 24px;
+      color: $serviceFormHeader;
+      font-family: $headingFontFamily;
+    }
+
+    p {
+      font-size: 18px;
+      color: $serviceFormParagraf;
+      padding-top: 2vw;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: 2.4vw;
+
+      input {
+        border: none;
+        border-bottom: 1px solid $serviceForm;
+        color: $serviceForm;
+
+        &[type="text"] {
+          background: transparent;
+          font-size: 18px;
+          color: $serviceForm;
+          padding-bottom: 11px;
+        }
+
+        &:nth-child(2) {
+          margin-top: 22px;
+        }
+      }
+    }
+  }
+}

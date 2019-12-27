@@ -1,0 +1,35 @@
+//base
+
+@import './homepage/base/variables';
+@import './homepage/base/fonts';
+
+
+// respnosive
+
+@import './homepage/mixin/breakpoint';
+
+//section
+
+@import './homepage/sections/home';
+@import './homepage/sections/service';
+@import './homepage/sections/blog';
+@import './homepage/sections/subscibe';
+
+//layouts
+
+@import './homepage/layouts/footer';
+@import './homepage/layouts/header';
+@import './homepage/layouts/base';
+
+// components
+
+@import './homepage/components/buttons';
+
+
+// service scss
+
+// sections
+
+@import './servicepage/section/service-home';
+@import './servicepage/section/service-intro';
+@import './servicepage/section/service-form';

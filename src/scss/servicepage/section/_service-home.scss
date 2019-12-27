@@ -1,0 +1,34 @@
+.service-home-img {
+  margin-top: 4.5vw;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .service-home-content {
+    position: absolute;
+    left: 2rem;
+    top: 11vw;
+
+    h1 {
+      color: $serviceHomeHeading;
+      font-size: 9vw;
+      font-family: $headingFontFamily;
+    }
+
+    .service-home-box {
+      margin-top: 3vw;
+      background: $serviceHomeBg;
+      width: 40%;
+      height: 40vw;
+      padding: 30px;
+    }
+
+      p {
+        font-size: 36px;
+        color: $serviceHomeHeading;
+      }
+  }
+}

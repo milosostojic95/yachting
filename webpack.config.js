@@ -2,7 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-  entry: require.resolve('./site/js/index.js'),
+  entry: require.resolve('./src/js/index.js'),
   context: __dirname,
   mode: 'development',
   output: {
@@ -11,9 +11,15 @@ module.exports = {
   },
   plugins:[
     new HtmlWebpackPlugin({
-      template: "./site/template.html"
-    }), new MiniCssExtractPlugin({
-      filename:"[name].css"
+      filename: 'index.html',
+      template: './src/template.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'service.html',
+     template: './src/service.html'
+    }),
+     new MiniCssExtractPlugin({
+      filename: '[name].css'
     })
   ],
   module: {
@@ -28,7 +34,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name:"[name].[ext]",
+              name: '[name].[ext]',
               outputPath: 'imgs',
               esModule: false
             }
@@ -40,7 +46,8 @@ module.exports = {
         use: {
           loader: 'html-loader',
         }
-      },{
+      },
+      {
         test:/\.(woff2|woff|otf|ttf)$/,
         use:[
           {

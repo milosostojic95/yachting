@@ -4,7 +4,11 @@
   .home-into {
     margin: 6.5rem 0 8.5rem;
 
-    @include breakpoint (laptop) {
+    @include breakpoint (mobile) {
+      margin: 3rem 2rem 6rem;
+    }
+
+    @include breakpoint (smallTablet) {
       margin: 6.5rem 2rem 8.5rem;
     }
 
@@ -12,12 +16,8 @@
       margin: 6.5rem 2rem 8.5rem;
     }
 
-    @include breakpoint (smallTablet) {
+    @include breakpoint (laptop) {
       margin: 6.5rem 2rem 8.5rem;
-    }
-
-    @include breakpoint (mobile) {
-      margin: 3rem 2rem 6rem;
     }
 
     h1 {

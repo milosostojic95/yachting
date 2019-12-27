@@ -1,0 +1,16 @@
+.service-intro {
+  padding: 30vw 2vw 0;
+  display: flex;
+  justify-content: space-between;
+
+  .service-intro-content {
+    flex-basis: 33%;
+
+    p {
+      font-size: 18px;
+      color: $serviceHomeParagraf;
+      font-family: $bodyFontFamily;
+    }
+  }
+
+}
