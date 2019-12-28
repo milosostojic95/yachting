@@ -90,3 +90,35 @@
     display: block;
   }
 }
+
+.service-form-btn {
+  margin-top: 41px;
+  background: transparent;
+  font-size: 18px;
+  text-align: right;
+  flex-basis: 40%;
+  color: $serviceForm;
+  border: none;
+  float: right;
+  cursor: pointer;
+
+  @include breakpoint (mobile) {
+    font-size: 14px;
+  }
+
+  @include breakpoint (smallTablet) {
+    font-size: 16px;
+  }
+
+  @include breakpoint (tablet) {
+    font-size: 18px;
+  }
+
+  @include breakpoint (desktop) {
+    font-size: 20px;
+  }
+
+  svg {
+    margin-left: 13px;
+  }
+}

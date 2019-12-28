@@ -29,69 +29,17 @@
     }
 
     .privacy {
-      display: flex;
       position: absolute;
-      bottom: 30px;
       right: 4vw;
-
-      @include breakpoint (mobile) {
-        bottom: 0;
-        right: 50%;
-        transform: translateX(50%);
-      }
-
-      @include breakpoint (smallTablet) {
-        bottom: 30px;
-        margin: 0 auto;
-      }
+      bottom: 10px;
 
       p {
-        font-size: 14px;
-        font-family: $bodyFontFamily;
+        font-size: 12px;
         color: $privacyParagraf;
-        font-weight: 400;
-
-        @include breakpoint (smallTablet) {
-          font-size: 12px;
-        }
-
-        @include breakpoint (tablet) {
-          font-size: 12px;
-        }
-
-        @include breakpoint (desktop) {
-          font-size: 16px;
-        }
-
-        @include breakpoint (mobile) {
-          font-size: 10px;
-        }
-
-        span {
-          font-size: 14px;
-          margin-left: 1.6vw;
-          color: $privacyParagraf;
-          font-family: $bodyFontFamily;
-          font-weight: 400;
-
-          @include breakpoint (smallTablet) {
-            font-size: 12px;
-          }
-
-          @include breakpoint (tablet) {
-            font-size: 12px;
-          }
-
-          @include breakpoint (desktop) {
-            font-size: 16px;
-          }
-
-          @include breakpoint (mobile) {
-            font-size: 10px;
-          }
-        }
       }
+
     }
+
 
     h5 {
       color: $footerHeading;

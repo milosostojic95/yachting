@@ -6,32 +6,33 @@
   .form-content {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 29%;
+    margin-left: 2rem;
 
     @include breakpoint (mobile) {
       width: 70%;
     }
 
     @include breakpoint (smallTablet) {
-      width: 49%;
+      width: 39%;
+      margin: 0 auto;
     }
 
     @include breakpoint (tablet) {
       width: 39%;
     }
 
-    @include breakpoint (tablet) {
+    @include breakpoint (laptop) {
       width: 29%;
     }
 
     h3 {
-      font-size: 24px;
+
       color: $serviceFormHeader;
       font-family: $headingFontFamily;
+      font-weight: 500;
 
       @include breakpoint (mobile) {
-        font-size: 5vw;
+        font-size: 4.5vw;
         text-align: left;
       }
 
@@ -40,16 +41,17 @@
         text-align: left;
       }
 
-      @include breakpoint (tablet) {
-        font-size: 24px;
+      @include breakpoint (laptop) {
+        font-size: 2vw;
         text-align: left;
       }
     }
 
     p {
-      font-size: 18px;
       color: $serviceFormParagraf;
       padding-top: 2vw;
+      font-family: $bodyFontFamily;
+      font-weight: 400;
 
       @include breakpoint (mobile) {
         font-size: 3vw;
@@ -62,7 +64,7 @@
       }
 
       @include breakpoint (laptop) {
-        font-size: 18px;
+        font-size: 1.3vw;
       }
 
 
@@ -78,18 +80,28 @@
         border-bottom: 1px solid $serviceForm;
         color: $serviceForm;
 
+        &::placeholder {
+          color: $serviceForm;
+        }
+
         &[type="text"] {
           background: transparent;
           font-size: 18px;
           color: $serviceForm;
           padding-bottom: 11px;
+          font-family: $bodyFontFamily;
+          font-weight: 400;
 
           @include breakpoint (mobile) {
             font-size: 3vw;
           }
 
           @include breakpoint (smallTablet) {
-            font-size: 2vw;
+            font-size: 18px;
+          }
+
+          @include breakpoint (desktop) {
+            font-size: 20px;
           }
         }
 
