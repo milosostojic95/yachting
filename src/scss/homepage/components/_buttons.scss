@@ -96,10 +96,8 @@
   background: transparent;
   font-size: 18px;
   text-align: right;
-  flex-basis: 40%;
   color: $serviceForm;
   border: none;
-  float: right;
   cursor: pointer;
 
   @include breakpoint (mobile) {

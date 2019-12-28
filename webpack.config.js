@@ -18,6 +18,10 @@ module.exports = {
       filename: 'service.html',
      template: './src/service.html'
     }),
+    new HtmlWebpackPlugin({
+      filename: 'blog.html',
+     template: './src/blog.html'
+    }),
      new MiniCssExtractPlugin({
       filename: '[name].css'
     })

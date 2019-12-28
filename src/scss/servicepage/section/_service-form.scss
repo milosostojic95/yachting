@@ -78,7 +78,6 @@
       input {
         border: none;
         border-bottom: 1px solid $serviceForm;
-        color: $serviceForm;
 
         &::placeholder {
           color: $serviceForm;
@@ -87,7 +86,6 @@
         &[type="text"] {
           background: transparent;
           font-size: 18px;
-          color: $serviceForm;
           padding-bottom: 11px;
           font-family: $bodyFontFamily;
           font-weight: 400;
@@ -97,11 +95,11 @@
           }
 
           @include breakpoint (smallTablet) {
-            font-size: 18px;
+            font-size: 2vw;
           }
 
-          @include breakpoint (desktop) {
-            font-size: 20px;
+          @include breakpoint (laptop) {
+            font-size: 1.3vw;
           }
         }
 
