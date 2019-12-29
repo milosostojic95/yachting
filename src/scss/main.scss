@@ -26,14 +26,14 @@
 @import './homepage/components/buttons';
 
 
-// service scss
+// ============service scss ============
 
 // sections
-
 @import './servicepage/section/service-home';
 @import './servicepage/section/service-intro';
 @import './servicepage/section/service-form';
 
+ // ================= blog scss ====================
 
-// blog scss
-@import './blogpage/blog-main';
+//sections
+@import './blogpage/section/blog-main';

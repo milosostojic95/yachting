@@ -5,15 +5,15 @@
     margin: 6.5rem 0 8.5rem;
 
     @include breakpoint (mobile) {
-      margin: 3rem 3rem 6rem;
+      margin: 3rem 2rem 6rem;
     }
 
     @include breakpoint (smallTablet) {
-      margin: 6.5rem 3rem 8.5rem;
+      margin: 6.5rem 2rem 8.5rem;
     }
 
     @include breakpoint (tablet) {
-      margin: 6.5rem 3rem 8.5rem;
+      margin: 6.5rem 2rem 8.5rem;
     }
 
     @include breakpoint (desktop) {
@@ -42,9 +42,11 @@
 
       @include breakpoint (laptop) {
         font-size: 9vw;
-
       }
 
+      @include breakpoint (desktop) {
+        font-size: 8.5vw;
+      }
     }
   }
 
