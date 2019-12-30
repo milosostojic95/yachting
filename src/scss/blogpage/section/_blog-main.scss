@@ -2,17 +2,52 @@ main {
   display: flex;
   justify-content: flex-end;
 
+  @include breakpoint (mobile) {
+    justify-content: flex-start;
+  }
+
+  @include breakpoint (smallTablet) {
+    justify-content: flex-end;
+  }
+
   section {
     flex-basis: 70%;
+
+    @include breakpoint (mobile) {
+      flex-basis: 100%;
+    }
+
+    @include breakpoint (smallTablet) {
+      flex-basis: 70%;
+    }
 
     .blog-heading {
       margin-top: 7vw;
 
+      @include breakpoint (mobile) {
+        padding: 0 0 0 2rem;
+      }
+
+      @include breakpoint (smallTablet) {
+        padding: 0;
+      }
+
       h4 {
-        font-size: 1.3vw;
         color: $blogSmallHeading;
         font-weight: 500;
         font-family: $headingFontFamily;
+
+        @include breakpoint (mobile) {
+          font-size: 1.8vw;
+        }
+
+        @include breakpoint (smallTablet) {
+          font-size: 1.5vw;
+        }
+
+        @include breakpoint (tablet) {
+          font-size: 1.3vw;
+        }
 
         span {
           color: $blogHeadingSpan;
@@ -25,6 +60,18 @@ main {
         color: $blogSmallHeading;
         font-family: $headingFontFamily;
         font-weight: 500;
+
+        @include breakpoint (mobile) {
+          font-size: 4vw;
+        }
+
+        @include breakpoint (smallTablet) {
+          font-size: 3.7vw;
+        }
+
+        @include breakpoint (tablet) {
+          font-size: 3.5vw;
+        }
       }
     }
 
@@ -43,6 +90,14 @@ main {
         font-family: $bodyFontFamily;
         font-weight: 400;
         font-size: 1.1vw;
+
+        @include breakpoint (mobile) {
+          display: none;
+        }
+
+        @include breakpoint (smallTablet) {
+          display: block;
+        }
       }
 
       img{
@@ -55,12 +110,35 @@ main {
       width: 60%;
       margin: 3vw 0 15vw 0;
 
+      @include breakpoint (mobile) {
+        width: 70%;
+        padding: 0 0 0 2rem;
+        margin: 3vw auto;
+      }
+
+      @include breakpoint (smallTablet) {
+        width: 60%;
+        padding: 0;
+        margin: 3vw 0 15vw 0;
+      }
+
       p{
         padding: 10px 0;
-        font-size: 1.3vw;
         font-family: $bodyFontFamily;
         font-weight: 400;
         color: $blogText;
+
+        @include breakpoint (mobile) {
+          font-size: 2vw;
+        }
+
+        @include breakpoint (smallTablet) {
+          font-size: 1.5vw;
+        }
+
+        @include breakpoint (tablet) {
+          font-size: 1.3vw;
+        }
       }
 
       .next-blog {
@@ -75,6 +153,18 @@ main {
             font-family: $headingFontFamily;
             font-weight: 500;
             font-size: 1.1vw;
+
+            @include breakpoint (mobile) {
+              font-size: 2vw;
+            }
+
+            @include breakpoint (smallTablet) {
+              font-size: 1.5vw;
+            }
+
+            @include breakpoint (tablet) {
+              font-size: 1.3vw;
+            }
           }
 
           p {
@@ -82,9 +172,20 @@ main {
             font-family: $bodyFontFamily;
             font-weight: 400;
             padding: 16px 0;
+
+            @include breakpoint (mobile) {
+              font-size: 1.7vw;
+            }
+
+            @include breakpoint (smallTablet) {
+              font-size: 1.5vw;
+            }
+
+            @include breakpoint (tablet) {
+              font-size: 1.3vw;
+            }
           }
         }
-
       }
     }
   }
