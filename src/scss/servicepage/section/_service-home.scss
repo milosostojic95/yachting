@@ -3,14 +3,24 @@
   position: relative;
 
   img {
-    width: 100%;
-    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+
   }
 
   .service-home-content {
-    position: absolute;
-    left: 2rem;
-    top: 11vw;
+    position: relative;
+    padding-top: 11vw;
+
+    @include breakpoint (mobile) {
+      padding: 11vw 2rem 0;
+    }
+
+    @include breakpoint (smallTablet) {
+      padding: 11vw 2rem 0;
+    }
+
 
     h1 {
       color: $serviceHomeHeading;
