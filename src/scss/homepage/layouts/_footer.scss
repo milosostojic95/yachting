@@ -13,7 +13,7 @@
 
   .footer-content {
     flex-basis: 25%;
-    padding: 9vw 4vw 9vw 4vw;
+    padding: 9vw 4vw 0 4vw;
     position: relative;
 
     @include breakpoint (mobile) {
@@ -29,15 +29,32 @@
     }
 
     .privacy {
-      position: absolute;
-      right: 4vw;
-      bottom: 10px;
+      display: flex;
 
-      p {
-        font-size: 12px;
-        color: $privacyParagraf;
+      @include breakpoint (mobile) {
+        justify-content: center;
       }
 
+      @include breakpoint (smallTablet) {
+        justify-content: flex-end;
+      }
+
+     .privacy-content {
+      padding: 15vw 0 1vw 0;
+
+      p {
+        font-size: 1vw;
+        color: $privacyParagraf;
+
+        @include breakpoint (mobile) {
+          font-size: 1.5vw;
+        }
+
+        @include breakpoint (smallTablet) {
+          font-size: 1vw;
+        }
+      }
+     }
     }
 
 
@@ -120,14 +137,18 @@
       color: $footerHeading;
       font-family: $bodyFontFamily;
       font-weight: 400;
+
       @include breakpoint (mobile) {
         font-size: 20px;
         text-align: center;
+        width: 70%;
+        margin: 0 auto;
       }
 
       @include breakpoint (smallTablet) {
         font-size: 22px;
         text-align: left;
+        width: 100%;
       }
 
       @include breakpoint (tablet) {

@@ -35,7 +35,7 @@ main {
         position: absolute;
         content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
         bottom: 0;
-        left: -16vw;
+        left: -15vw;
         color: $blogText;
         width: 11vw;
         padding-bottom: 16px;
@@ -61,6 +61,30 @@ main {
         font-family: $bodyFontFamily;
         font-weight: 400;
         color: $blogText;
+      }
+
+      .next-blog {
+        margin-top: 20vw;
+        display: flex;
+        justify-content: flex-end;
+
+        .next-content {
+
+          h5 {
+            color: $blogSmallHeading;
+            font-family: $headingFontFamily;
+            font-weight: 500;
+            font-size: 1.1vw;
+          }
+
+          p {
+            font-size: 1.1vw;
+            font-family: $bodyFontFamily;
+            font-weight: 400;
+            padding: 16px 0;
+          }
+        }
+
       }
     }
   }

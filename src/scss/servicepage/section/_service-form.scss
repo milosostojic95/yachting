@@ -2,31 +2,29 @@
   margin-top: 10vw;
   background: $serviceFormBg;
   padding: 10vw 0 10vw;
+  display: flex;
 
   .form-content {
-    display: flex;
-    flex-direction: column;
     margin-left: 2rem;
 
     @include breakpoint (mobile) {
-      width: 70%;
+     flex-basis: 70%;
+     margin: 0 auto;
     }
 
     @include breakpoint (smallTablet) {
-      width: 39%;
-      margin: 0 auto;
+      flex-basis: 40%;
     }
 
     @include breakpoint (tablet) {
-      width: 39%;
+      flex-basis: 40%;
     }
 
     @include breakpoint (laptop) {
-      width: 29%;
+      flex-basis: 30%;
     }
 
     h3 {
-
       color: $serviceFormHeader;
       font-family: $headingFontFamily;
       font-weight: 500;

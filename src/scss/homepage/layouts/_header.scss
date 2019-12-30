@@ -22,6 +22,14 @@
     right:-60px;
     display: flex;
 
+    @include breakpoint (mobile) {
+      right: -40px;
+    }
+
+    @include breakpoint (smallTablet) {
+      right: -60px;
+    }
+
     a {
       color: $socialLink;
       font-size: 1vw;

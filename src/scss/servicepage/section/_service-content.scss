@@ -1,10 +1,9 @@
 .service-intro {
-  padding: 45vw 0 0;
+  padding: 0 0 0;
 
   @include breakpoint (mobile) {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     padding: 20vw 0 0;
   }
 
@@ -12,18 +11,18 @@
     display: flex;
     flex-direction: row;
     padding: 41vw 2rem 0;
-
   }
 
   .service-intro-content {
 
     @include breakpoint (mobile) {
-      width: 70%;
       margin-left: 2rem;
+      width: 70%;
+      margin: 0 auto;
     }
 
-    @include breakpoint (smallTablet) {
-      flex-basis: 33%;
+    @include breakpoint (smallTablet){
+      margin-left: 0;
     }
 
     p {
