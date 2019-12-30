@@ -21,6 +21,10 @@
       padding: 11vw 2rem 0;
     }
 
+    @include breakpoint (desktop) {
+      padding: 11vw 0 0;
+    }
+
 
     h1 {
       color: $serviceHomeHeading;
