@@ -16,11 +16,15 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: 'service.html',
-     template: './src/service.html'
+      template: './src/service.html'
     }),
     new HtmlWebpackPlugin({
       filename: 'blog.html',
-     template: './src/blog.html'
+      template: './src/blog.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'blogsingle.html',
+      template: './src/blogsingle.html'
     }),
      new MiniCssExtractPlugin({
       filename: '[name].css'

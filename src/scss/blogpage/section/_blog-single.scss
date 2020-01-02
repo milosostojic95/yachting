@@ -33,7 +33,7 @@ main {
       }
 
       h4 {
-        color: $blogSmallHeading;
+        color: $blogSingleSmallHeading;
         font-weight: 500;
         font-family: $headingFontFamily;
 
@@ -50,14 +50,14 @@ main {
         }
 
         span {
-          color: $blogHeadingSpan;
+          color: $blogSingleHeadingSpan;
         }
       }
 
       h2{
         font-size: 3.5vw;
         margin: 1vw 0 3.5vw 0;
-        color: $blogSmallHeading;
+        color: $blogSingleSmallHeading;
         font-family: $headingFontFamily;
         font-weight: 500;
 
@@ -83,7 +83,7 @@ main {
         content: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
         bottom: 0;
         left: -15vw;
-        color: $blogText;
+        color: $blogSingleText;
         width: 11vw;
         padding-bottom: 16px;
         border-bottom: 1px solid #CECFCA;
@@ -126,7 +126,7 @@ main {
         padding: 10px 0;
         font-family: $bodyFontFamily;
         font-weight: 400;
-        color: $blogText;
+        color: $blogSingleText;
 
         @include breakpoint (mobile) {
           font-size: 2vw;
@@ -149,7 +149,7 @@ main {
         .next-content {
 
           h5 {
-            color: $blogSmallHeading;
+            color: $blogSingleSmallHeading;
             font-family: $headingFontFamily;
             font-weight: 500;
             font-size: 1.1vw;

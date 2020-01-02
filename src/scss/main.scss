@@ -33,7 +33,9 @@
 @import './servicepage/section/service-content';
 @import './servicepage/section/service-form';
 
- // ================= blog scss ====================
+ // ================= blog single ====================
 
 //sections
-@import './blogpage/section/blog-main';
+@import './blogpage/section/blog-single';
+
+@import './blog/blogpage';
