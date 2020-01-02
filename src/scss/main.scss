@@ -1,14 +1,17 @@
 //base
-
-@import './homepage/base/variables';
 @import './homepage/base/fonts';
 
+//variables
 
-// respnosive
+@import './homepage/base/variables';
+@import './blog//blogvariables/blogvariables';
+@import './blogpage/blogSingleVariables/blogsinglevariables';
+@import './servicepage/servicevariables/servicevariables';
+// mixins
 
 @import './homepage/mixin/breakpoint';
 
-//section
+//home page
 
 @import './homepage/sections/home';
 @import './homepage/sections/service';
@@ -26,16 +29,16 @@
 @import './homepage/components/buttons';
 
 
-// ============service scss ============
+// blogpage
 
-// sections
-@import './servicepage/section/service-home';
-@import './servicepage/section/service-content';
+@import './blog/section/blogpage';
+
+// service page
+
 @import './servicepage/section/service-form';
+@import './servicepage/section/service-home';
 
- // ================= blog single ====================
 
-//sections
-@import './blogpage/section/blog-single';
+// blog single
 
-@import './blog/blogpage';
+@import './blogpage/section/blogsingle';
