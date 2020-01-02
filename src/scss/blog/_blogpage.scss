@@ -4,7 +4,7 @@
   h4 {
     text-align: center;
     font-size: 1.3vw;
-    color: $blogMainHeading;
+    color: $blogPageMainHeading;
     font-family: $bodyFontFamily;
     font-weight: 400;
 
@@ -20,6 +20,53 @@
     .right-blog-content {
       flex-basis: 70%;
 
+      .right-blog-wrapper {
+        margin-top: 6vw;
+        position: relative;
+
+        &:nth-child(6) {
+          margin-bottom: 12vw;
+
+          &::after {
+            display: none;
+          }
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 21px;
+          height: 1px;
+          background: $blogPageLine;
+        }
+
+        .small-heading {
+
+          h5 {
+            font-size: 1.3vw;
+            font-family: $bodyFontFamily;
+            color: $blogPageSmallHeading;
+
+            span {
+              color: $blogPageSmallHeadingSpan;
+            }
+          }
+
+        }
+
+        .big-heading {
+          padding: 19px 0 55px;
+
+          h2 {
+            font-size: 3.5vw;
+            color: $blogPageBigHeading;
+            font-family: $headingFontFamily;
+            font-weight: 500;
+          }
+        }
+      }
     }
   }
 }
