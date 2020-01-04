@@ -1,4 +1,4 @@
-.service-intro {
+.service-text {
   padding: 0 0 0;
 
   @include breakpoint (mobile) {
@@ -13,7 +13,7 @@
     padding: 15vw 2rem 0;
   }
 
-  .service-intro-content {
+  .service-text-content {
 
     @include breakpoint (mobile) {
       margin-left: 2rem;
