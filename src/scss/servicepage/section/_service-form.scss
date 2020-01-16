@@ -50,22 +50,13 @@
       padding-top: 2vw;
       font-family: $bodyFontFamily;
       font-weight: 400;
+      font-size: 1.125rem;
 
       @include breakpoint (mobile) {
-        font-size: 3vw;
         text-align: left;
         padding-top: 4vw;
+        font-size: 1.125rem;
       }
-
-      @include breakpoint (smallTablet) {
-        font-size: 2vw;
-      }
-
-      @include breakpoint (laptop) {
-        font-size: 1.3vw;
-      }
-
-
     }
 
     form {
@@ -83,22 +74,10 @@
 
         &[type="text"] {
           background: transparent;
-          font-size: 18px;
+          font-size: 1.125rem;
           padding-bottom: 11px;
           font-family: $bodyFontFamily;
           font-weight: 400;
-
-          @include breakpoint (mobile) {
-            font-size: 3vw;
-          }
-
-          @include breakpoint (smallTablet) {
-            font-size: 2vw;
-          }
-
-          @include breakpoint (laptop) {
-            font-size: 1.3vw;
-          }
         }
 
         &:nth-child(2) {

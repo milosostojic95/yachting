@@ -43,16 +43,8 @@
       padding: 15vw 0 1vw 0;
 
       p {
-        font-size: 1vw;
+        font-size: 0.875rem;
         color: $privacyParagraf;
-
-        @include breakpoint (mobile) {
-          font-size: 1.5vw;
-        }
-
-        @include breakpoint (smallTablet) {
-          font-size: 1vw;
-        }
       }
      }
     }
@@ -60,52 +52,32 @@
 
     h5 {
       color: $footerHeading;
-      font-size: 14px;
+      font-size: 0.875rem;
       margin-bottom: 10px;
       font-family: $headingFontFamily;
       font-weight: 400;
 
       @include breakpoint (mobile) {
         text-align: center;
-        font-size: 14px;
       }
 
       @include breakpoint (smallTablet) {
-        font-size: 12px;
         text-align: left;
-      }
-
-      @include breakpoint (tablet) {
-        font-size: 12px;
-      }
-
-      @include breakpoint (desktop) {
-        font-size: 16px;
       }
     }
 
     p {
-      font-size: 18px;
+      font-size: 1.125rem;
       color: $footerParagraf;
       font-family: $bodyFontFamily;
       font-weight: 400;
 
       @include breakpoint (mobile) {
         text-align: center;
-        font-size: 14px;
       }
 
       @include breakpoint (smallTablet) {
-        font-size: 16px;
         text-align: left;
-      }
-
-      @include breakpoint (tablet) {
-       font-size: 16px;
-      }
-
-      @include breakpoint (desktop) {
-        font-size: 20px;
       }
 
       &:nth-child(2) {
@@ -116,11 +88,10 @@
     a {
       display: block;
       color: $footerParagraf;
-      font-size: 18px ;
+      font-size: 1.125rem;
 
       @include breakpoint (mobile) {
         text-align: center;
-        font-size: 14px;
       }
 
       @include breakpoint (smallTablet) {
@@ -133,30 +104,20 @@
     }
 
     h4 {
-      font-size: 24px;
+      font-size: 1.5rem;
       color: $footerHeading;
       font-family: $bodyFontFamily;
       font-weight: 400;
 
-      @include breakpoint (mobile) {
-        font-size: 20px;
+      @include breakpoint (mobile) {;
         text-align: center;
         width: 70%;
         margin: 0 auto;
       }
 
       @include breakpoint (smallTablet) {
-        font-size: 22px;
         text-align: left;
         width: 100%;
-      }
-
-      @include breakpoint (tablet) {
-       font-size: 22px;
-      }
-
-      @include breakpoint (desktop) {
-        font-size: 26px;
       }
     }
   }

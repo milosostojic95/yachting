@@ -93,7 +93,7 @@ main {
         border-bottom: 1px solid #CECFCA;
         font-family: $bodyFontFamily;
         font-weight: 400;
-        font-size: 1.1vw;
+        font-size: 0.875rem;
 
         @include breakpoint (mobile) {
           display: none;
@@ -129,18 +129,7 @@ main {
         font-family: $bodyFontFamily;
         font-weight: 400;
         color: $blogSingleText;
-
-        @include breakpoint (mobile) {
-          font-size: 2.5vw;
-        }
-
-        @include breakpoint (smallTablet) {
-          font-size: 1.5vw;
-        }
-
-        @include breakpoint (tablet) {
-          font-size: 1.3vw;
-        }
+        font-size: 1.125rem;
       }
 
       .next-blog {
@@ -154,38 +143,14 @@ main {
             color: $blogSingleSmallHeading;
             font-family: $headingFontFamily;
             font-weight: 500;
-            font-size: 1.1vw;
-
-            @include breakpoint (mobile) {
-              font-size: 2vw;
-            }
-
-            @include breakpoint (smallTablet) {
-              font-size: 1.5vw;
-            }
-
-            @include breakpoint (tablet) {
-              font-size: 1.3vw;
-            }
+            font-size: 0.875rem;
           }
 
           p {
-            font-size: 1.1vw;
+            font-size: 0.875rem;
             font-family: $bodyFontFamily;
             font-weight: 400;
             padding: 16px 0;
-
-            @include breakpoint (mobile) {
-              font-size: 1.7vw;
-            }
-
-            @include breakpoint (smallTablet) {
-              font-size: 1.5vw;
-            }
-
-            @include breakpoint (tablet) {
-              font-size: 1.3vw;
-            }
           }
         }
       }

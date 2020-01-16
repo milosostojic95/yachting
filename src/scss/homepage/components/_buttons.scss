@@ -1,5 +1,5 @@
 .service-btn {
-  font-size: 18px;
+  font-size: 1.125rem;
   color: $serviceBtn;
   background: transparent;
   border: none;
@@ -9,23 +9,6 @@
   font-family: $bodyFontFamily;
   font-weight: 400;
 
-  @include breakpoint (mobile) {
-    font-size: 14px;
-  }
-
-  @include breakpoint (smallTablet) {
-    font-size: 16px;
-  }
-
-  @include breakpoint (tablet) {
-    font-size: 18px;
-  }
-
-  @include breakpoint (desktop) {
-    font-size: 20px;
-  }
-
-
   svg{
     margin-left: 13px;
   }
@@ -34,29 +17,13 @@
 .form-btn {
   margin-top: 41px;
   background: transparent;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: right;
   flex-basis: 40%;
   color: $serviceBtn;
   border: none;
   float: right;
   cursor: pointer;
-
-  @include breakpoint (mobile) {
-    font-size: 14px;
-  }
-
-  @include breakpoint (smallTablet) {
-    font-size: 16px;
-  }
-
-  @include breakpoint (tablet) {
-    font-size: 18px;
-  }
-
-  @include breakpoint (desktop) {
-    font-size: 20px;
-  }
 
   svg {
     margin-left: 13px;
@@ -94,27 +61,11 @@
 .service-form-btn {
   margin-top: 41px;
   background: transparent;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-align: right;
   color: $serviceForm;
   border: none;
   cursor: pointer;
-
-  @include breakpoint (mobile) {
-    font-size: 14px;
-  }
-
-  @include breakpoint (smallTablet) {
-    font-size: 16px;
-  }
-
-  @include breakpoint (tablet) {
-    font-size: 18px;
-  }
-
-  @include breakpoint (desktop) {
-    font-size: 20px;
-  }
 
   svg {
     margin-left: 13px;

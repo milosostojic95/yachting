@@ -62,27 +62,11 @@
 
       p {
         margin: 20px 0;
-        font-size: 18px;
+        font-size: 1.125rem;
         color: $subscibeParagraf;
         font-family: $bodyFontFamily;
         font-weight: 400;
         line-height: 1.2;
-
-        @include breakpoint (mobile) {
-          font-size: 14px;
-        }
-
-        @include breakpoint (smallTablet) {
-          font-size: 16px;
-        }
-
-        @include breakpoint (tablet) {
-          font-size: 18px;
-        }
-
-        @include breakpoint (desktop) {
-          font-size: 20px;
-        }
       }
     }
 
@@ -106,28 +90,12 @@
           width: 100%;
 
           &[type="text"] {
-            font-size: 18px;
+            font-size: 1.125rem;
             font-family: $bodyFontFamily;
             font-weight: 400;
             color: $subscibeFormtext;
             border-bottom: 1px solid $subscibeBorder;
             padding-bottom: 11px;
-
-            @include breakpoint (mobile) {
-              font-size: 14px;
-            }
-
-            @include breakpoint (smallTablet) {
-              font-size: 16px;
-            }
-
-            @include breakpoint (tablet) {
-              font-size: 18px;
-            }
-
-            @include breakpoint (desktop) {
-              font-size: 20px;
-            }
           }
 
           &:nth-child(2) {

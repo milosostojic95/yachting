@@ -79,59 +79,34 @@
 
       h5 {
         margin-top: 20px;
-        font-size: 18px;
         color: $blogSmallHeading;
         margin-bottom: 4.3vw;
         font-family: $headingFontFamily;
         font-weight: 500;
 
         @include breakpoint (mobile) {
-          font-size: 14px;
+          font-size: 1.275rem;
         }
 
         @include breakpoint (smallTablet) {
           margin-top: 15px;
-          font-size: 16px;
           margin-bottom: 3.5vw;
         }
 
         @include breakpoint (tablet) {
           margin-top: 20px;
-          font-size: 18px;
-          margin-bottom: 4.3vw;
-        }
 
-        @include breakpoint (desktop) {
-          font-size: 20px;
+          margin-bottom: 4.3vw;
         }
       }
 
       p {
-        font-size: 18px;
+        font-size: 1.125rem;
         color: $blogParagraf;
         font-family: $bodyFontFamily;
         font-weight: 400;
         line-height: 1.2;
         text-align: justify;
-
-        @include breakpoint (mobile) {
-          font-size: 14px;
-        }
-
-        @include breakpoint (smallTablet) {
-          font-size: 16px;
-          line-height: 1.2;
-        }
-
-        @include breakpoint (tablet) {
-          font-size: 18px;
-          line-height: 1.2;
-        }
-
-        @include breakpoint (desktop) {
-          font-size: 20px;
-          line-height: 1.3;
-        }
       }
     }
   }
